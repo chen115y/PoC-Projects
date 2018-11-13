@@ -31,7 +31,7 @@ Link jupyter notebook with Spark (pyspark)
 ```
 
 ## Appendix 1 - Python 3.X Installation
-### Apt on Ubuntu
+### Use Apt on Ubuntu
 ```shell
     # Step 1: install python 3.X
     # sudo add-apt-repository ppa:jonathonf/python-3.6
@@ -47,13 +47,35 @@ Link jupyter notebook with Spark (pyspark)
     sudo apt install ipython3
     sudo pip3 install jupyter
     
-    # Step 4: install Virtual Studio Code
+    # Step 4: install Virtual Studio Code or PyCharm Community Edition
+    
+    # Download and install VS Code
     curl -O https://go.microsoft.com/fwlink/?LinkID=760868
     sudo apt update
     sudo dpkg -i <file>.deb
     sudo apt-get install -f
+    
+    # Download pycharm
+    wget -P /tmp/ https://download.jetbrains.com/python/pycharm-community-2018.2.4.tar.gz
+    
+    # Install PyCharm with snap
+    sudo snap install pycharm-community --classic
+    # Or install PyCharm with tar and pycharm.sh
+    tar xfz pycharm-*.tar.gz -C /usr/local/pycharm
+    cd /usr/local/pycharm/pycharm-*/bin
+    sh pycharm.sh
 ```
-### Anaconda on Linux:
+In the ~/.bashrc file, add 
+```bash
+    alias jupyter-notebook="~/.local/bin/jupyter-notebook --no-browser"
+```
+then type the command
+```shell
+    jupyter-notebook
+```
+to start jupyter notebook service. Use 127.0.0.1:8888 to access web UI.
+
+### Use Anaconda on Linux:
 ```shell
     # Step 1: Download Anaconda bash script
     curl -O https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
@@ -72,13 +94,13 @@ Link jupyter notebook with Spark (pyspark)
     conda create --name my_env python=3
     source activate my_env
 ```
-### Anaconda on Windows
+### Use Anaconda on Windows
 Step 1: Download anaconda executable (.exe) from the website of https://www.anaconda.com/download/#windows
 
 Step 2: Follow the installation wizard to install python and related libraries step-by-step
 
 ## Appendix 2 - Spark Installation
-### Apt on Ubuntu
+### Use Apt on Ubuntu
 ```shell
     # Step 1: Install Java
     # check Java version
@@ -92,14 +114,18 @@ Step 2: Follow the installation wizard to install python and related libraries s
 
     # Step 3: Instal Spark
     sudo apt install git
+    
     # download latest spark and untar it
     wget -P /tmp/ http://apache.osuosl.org/spark/spark-2.4.0/spark-2.4.0-bin-hadoop2.7.tgz
     sudo mkdir /usr/local/spark/
     sudo tar xvf /tmp/spark-2.4.0-bin-hadoop2.7.tgz -C /usr/local/spark
+    
     # installing pyspark with pip
     sudo pip3 install pyspark
+    
     # add snippet of SPARK_HOME to the bash file
     vim ~/.bashrc 
+    
     # then type: 
         SPARK_HOME = /usr/local/spark/spark-2.4.0-bin-hadoop2.7/
         export PATH = $SPARK_HOME/bin:$PATH

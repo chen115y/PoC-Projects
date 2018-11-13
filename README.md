@@ -29,3 +29,95 @@ Link jupyter notebook with Spark (pyspark)
     findspark.init()
     import pyspark
 ```
+
+## Appendix 1 - Python 3.X Installation
+### Apt on Ubuntu
+```shell
+    # Step 1: install python 3.X
+    # sudo add-apt-repository ppa:jonathonf/python-3.6
+    sudo apt update
+    sudo apt install python3
+
+    # Step 2: install pip and virtual environment
+    sudo apt install python3-pip python-dev build-essential
+    sudo pip install --upgrade pip
+    sudo pip install --upgrade virtualenv
+
+    # Step 3: install ipython & jupyter
+    sudo apt install ipython3
+    sudo pip3 install jupyter
+    
+    # Step 4: install Virtual Studio Code
+    curl -O https://go.microsoft.com/fwlink/?LinkID=760868
+    sudo apt update
+    sudo dpkg -i <file>.deb
+    sudo apt-get install -f
+```
+### Anaconda on Linux:
+```shell
+    # Step 1: Download Anaconda bash script
+    curl -O https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+
+    # Step 2: Verify the data integrity of the installer
+    sha256sum Anaconda3-5.2.0-Linux-x86_64.sh
+
+    # Step 3: Run the Anaconda script and complete installation process as prompted
+    bash Anaconda3-5.2.0-Linux-x86_64.sh
+
+    # Step 4: Activate and test installation
+    source ~/.bashrc
+    conda list
+
+    # Step 5: Setup Anaconda environments
+    conda create --name my_env python=3
+    source activate my_env
+```
+### Anaconda on Windows
+Step 1: Download anaconda executable (.exe) from the website of https://www.anaconda.com/download/#windows
+
+Step 2: Follow the installation wizard to install python and related libraries step-by-step
+
+## Appendix 2 - Spark Installation
+### Apt on Ubuntu
+```shell
+    # Step 1: Install Java
+    # check Java version
+    java -version
+    sudo apt update
+    sudo apt install default-jre
+    sudo apt install default-jdk
+
+    # Step 2: Install Python
+    See Appendix 1 - Python 3.X Installation
+
+    # Step 3: Instal Spark
+    sudo apt install git
+    # download latest spark and untar it
+    wget -P /tmp/ http://apache.osuosl.org/spark/spark-2.4.0/spark-2.4.0-bin-hadoop2.7.tgz
+    sudo mkdir /usr/local/spark/
+    sudo tar xvf /tmp/spark-2.4.0-bin-hadoop2.7.tgz -C /usr/local/spark
+    # installing pyspark with pip
+    sudo pip3 install pyspark
+    # add snippet of SPARK_HOME to the bash file
+    vim ~/.bashrc 
+    # then type: 
+        SPARK_HOME = /usr/local/spark/spark-2.4.0-bin-hadoop2.7/
+        export PATH = $SPARK_HOME/bin:$PATH
+    source ~/.bashrc
+```
+Then use 
+```shell
+    pyspark 
+```
+to access spark shell in python and use
+```shell
+    sh $SPARK_HOME/sbin/start-all.sh
+```
+to start the spark service. The web ui will be available at 127.0.1.1:8080 port
+
+
+## Appendix 3 - Python Data Science and Engineering Tools Installation
+### Use Pip 
+```shell
+    sudo pip3 install numpy pandas scipy scikit optimuspyspark findspark 
+```

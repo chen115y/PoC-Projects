@@ -75,30 +75,6 @@ then type the command
 ```
 to start jupyter notebook service. Use 127.0.0.1:8888 to access web UI.
 
-### Use Anaconda on Linux:
-```shell
-    # Step 1: Download Anaconda bash script
-    curl -O https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
-
-    # Step 2: Verify the data integrity of the installer
-    sha256sum Anaconda3-5.2.0-Linux-x86_64.sh
-
-    # Step 3: Run the Anaconda script and complete installation process as prompted
-    bash Anaconda3-5.2.0-Linux-x86_64.sh
-
-    # Step 4: Activate and test installation
-    source ~/.bashrc
-    conda list
-
-    # Step 5: Setup Anaconda environments
-    conda create --name my_env python=3
-    source activate my_env
-```
-### Use Anaconda on Windows
-Step 1: Download anaconda executable (.exe) from the website of https://www.anaconda.com/download/#windows
-
-Step 2: Follow the installation wizard to install python and related libraries step-by-step
-
 ## Appendix 2 - Spark Installation
 ### Use Apt on Ubuntu
 ```shell
@@ -143,7 +119,30 @@ to start the spark service. The web ui will be available at 127.0.1.1:8080 port
 
 
 ## Appendix 3 - Python Data Science and Engineering Tools Installation
-### Use Pip 
+### Use Pip (after Python 3.X installation above)
 ```shell
     sudo pip3 install numpy pandas scipy scikit optimuspyspark findspark 
 ```
+### Use Anaconda on Linux:
+```shell
+    # Step 1: Download Anaconda bash script
+    curl -O https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+
+    # Step 2: Verify the data integrity of the installer
+    sha256sum Anaconda3-5.2.0-Linux-x86_64.sh
+
+    # Step 3: Run the Anaconda script and complete installation process as prompted
+    bash Anaconda3-5.2.0-Linux-x86_64.sh
+
+    # Step 4: Activate and test installation
+    source ~/.bashrc
+    conda list
+
+    # Step 5: Setup Anaconda environments
+    conda create --name my_env python=3
+    source activate my_env
+```
+### Use Anaconda on Windows
+Step 1: Download anaconda executable (.exe) from the website of https://www.anaconda.com/download/#windows
+
+Step 2: Follow the installation wizard to install python and related libraries step-by-step

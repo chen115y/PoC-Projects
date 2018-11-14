@@ -121,8 +121,14 @@ to start the spark service. The web ui will be available at 127.0.1.1:8080 port
 ## Appendix 3 - Python Data Science and Engineering Tools Installation
 ### Use Pip (after Python 3.X installation above)
 ```shell
-    sudo pip3 install numpy pandas scipy scikit optimuspyspark findspark 
+    sudo pip3 install numpy pandas scipy tensorflow
+    sudo pip3 install -U scikit-learn
+    sudo pip3 install matplotlib seaborn findspark
+    # or install optimuspyspark for all
+    sudo pip3 install optimuspyspark  
 ```
+The eventual installed python packages include: pytz, python-dateutil, numpy, pandas, findspark, h5py, setuptools, kiwisolver, pyparsing,cycler, matplotlib, scipy, seaborn, keras-applications, keras-preprocessing, keras, pillow, pyarrow, multipledispatch, wrapt, deprecated, pyspark, atomicwrites, pluggy, py, more-itertools, pytest, nose, tabulate, ratelimit, ipython, vine, amqp, kombu, requests, pika, pymongo, backoff, itsdangerous, Werkzeug, flask, humanize, future, colorama, h2o-pysparkling-2.3, psutil, fastnumbers, protobuf, markdown, tensorboard, grpcio, termcolor, astor, gast, absl-py, tensorflow, tqdm, optimuspyspark
+
 ### Use Anaconda on Linux:
 ```shell
     # Step 1: Download Anaconda bash script

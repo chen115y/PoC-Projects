@@ -1,28 +1,6 @@
-# Distributed Memory based Data Engineering and Architecture Design 
-## - with Apache Ignite and Spark
-An instructional document for distributed & memory based data engineering (ETL) with Apache Ignite and Spark
+# Learning Notes
 
-## 1. What is Data Engineering and Data Architecture Design?
-
-### 1.1 Conventional approach
-
-### 1.2 Issues with big data
-
-## 2. Why Distributed Memory based Data Engineering?
-
-### 2.1 Differences between conventional approach and this one
-
-### 2.2 Pros and Cons
-
-## 3. Get Started
-
-### 3.1 Spark Installation
-
-### 3.2 Ignite Installation
-
-### 3.3 Development Tools
-
-#### 3.3.1 Jupyter Notebook with Spark
+## Jupyter Notebook with Spark
 Link jupyter notebook with Spark (pyspark)
 ```python
     import findspark
@@ -46,9 +24,8 @@ Link jupyter notebook with Spark (pyspark)
     # Step 3: install ipython & jupyter
     sudo apt install ipython3
     sudo pip3 install jupyter
-    
+        
     # Step 4: install Virtual Studio Code or PyCharm Community Edition
-    
     # Download and install VS Code
     curl -O https://go.microsoft.com/fwlink/?LinkID=760868
     sudo apt update
@@ -118,16 +95,18 @@ to access spark shell in python and use
 to start the spark service. The web ui will be available at 127.0.1.1:8080 port
 
 
-## Appendix 3 - Python Data Science and Engineering Tools Installation
+## Appendix 3 - iPython Data Science and Engineering Tools Installation
 ### Use Pip (after Python 3.X installation above)
 ```shell
     sudo pip3 install numpy pandas scipy tensorflow
     sudo pip3 install -U scikit-learn
     sudo pip3 install matplotlib seaborn findspark
     # or install optimuspyspark for all
-    sudo pip3 install optimuspyspark  
+    sudo pip3 install optimuspyspark
+    # Optional: install ipython-sql to enable sql adaptible
+    sudo pip3 install ipython-sql
 ```
-The eventual installed python packages include: pytz, python-dateutil, numpy, pandas, findspark, h5py, setuptools, kiwisolver, pyparsing,cycler, matplotlib, scipy, seaborn, keras-applications, keras-preprocessing, keras, pillow, pyarrow, multipledispatch, wrapt, deprecated, pyspark, atomicwrites, pluggy, py, more-itertools, pytest, nose, tabulate, ratelimit, ipython, vine, amqp, kombu, requests, pika, pymongo, backoff, itsdangerous, Werkzeug, flask, humanize, future, colorama, h2o-pysparkling-2.3, psutil, fastnumbers, protobuf, markdown, tensorboard, grpcio, termcolor, astor, gast, absl-py, tensorflow, tqdm, optimuspyspark
+The eventual installed python packages include: pytz, python-dateutil, numpy, pandas, findspark, h5py, setuptools, kiwisolver, pyparsing,cycler, matplotlib, scipy, seaborn, keras-applications, keras-preprocessing, keras, pillow, pyarrow, multipledispatch, wrapt, deprecated, pyspark, atomicwrites, pluggy, py, more-itertools, pytest, nose, tabulate, ratelimit, ipython, vine, amqp, kombu, requests, pika, pymongo, backoff, itsdangerous, Werkzeug, flask, humanize, future, colorama, h2o-pysparkling-2.3, psutil, fastnumbers, protobuf, markdown, tensorboard, grpcio, termcolor, astor, gast, absl-py, tensorflow, tqdm, optimuspyspark, ipython-sql
 
 ### Use Anaconda on Linux:
 ```shell

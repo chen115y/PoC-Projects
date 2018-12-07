@@ -193,3 +193,6 @@ Or Install Anaconda on Linux for light data science and engineering tools
     sh $SPARK_HOME/sbin/start-all.sh
 ```
     to start the spark service. The web ui will be available at 127.0.1.1:8080 port.
+
+### Vim Configuration
+    Use the [![vimrc](vim/vimrc)] in the folder [![vim](vim/)] to replace ~/.vim/vimrc

@@ -14,31 +14,22 @@
 
 ### Install Python 3.X
 ```shell
-    # Step 1: install python 3.X
     # sudo add-apt-repository ppa:jonathonf/python-3.6
     sudo apt update
     sudo apt install python3
 
-    # Step 2: install pip and virtual environment
     sudo apt install python3-pip python-dev build-essential
     sudo pip3 install --upgrade pip
     sudo pip3 install --upgrade virtualenv
 ```
 ### Install Spark
 ```shell
-    # Step 1: Install Java
     # check Java version
     java -version
     sudo apt update
     sudo apt install default-jre
     sudo apt install default-jdk
 
-    # Step 2: Install Python
-    See Appendix 1 - Python 3.X Installation
-
-    # Step 3: Instal Spark
-    sudo apt install git
-    
     # download latest spark and untar it
     wget -P /tmp/ http://apache.osuosl.org/spark/spark-2.4.0/spark-2.4.0-bin-hadoop2.7.tgz
     sudo mkdir /usr/local/spark/
@@ -144,14 +135,14 @@ iPython Data Science and Engineering Tools Installation
 ```shell
     sudo pip3 install numpy pandas scipy tensorflow
     sudo pip3 install -U scikit-learn
-    sudo pip3 install matplotlib seaborn findspark
+    sudo pip3 install matplotlib seaborn clarify findspark
     # or install optimuspyspark for all
     sudo pip3 install optimuspyspark
     sudo pip3 install sqlalchemy
     # Optional: install ipython-sql to enable sql adaptible
     sudo pip3 install ipython-sql
 ```
-The eventual installed python packages include: pytz, python-dateutil, numpy, pandas, findspark, h5py, setuptools, kiwisolver, pyparsing,cycler, matplotlib, scipy, seaborn, keras-applications, keras-preprocessing, keras, pillow, pyarrow, multipledispatch, wrapt, deprecated, pyspark, atomicwrites, pluggy, py, more-itertools, pytest, nose, tabulate, ratelimit, ipython, vine, amqp, kombu, requests, pika, pymongo, backoff, itsdangerous, Werkzeug, flask, humanize, future, colorama, h2o-pysparkling-2.3, psutil, fastnumbers, protobuf, markdown, tensorboard, grpcio, termcolor, astor, gast, absl-py, tensorflow, tqdm, optimuspyspark, sqlalchemy, ipython-sql
+The eventual installed python packages include: pytz, python-dateutil, numpy, pandas, findspark, h5py, setuptools, kiwisolver, pyparsing,cycler, matplotlib, scipy, seaborn, keras-applications, keras-preprocessing, keras, pillow, pyarrow, multipledispatch, wrapt, deprecated, pyspark, atomicwrites, pluggy, py, more-itertools, pytest, nose, tabulate, ratelimit, ipython, vine, amqp, kombu, requests, pika, pymongo, backoff, itsdangerous, Werkzeug, flask, humanize, future, colorama, h2o-pysparkling-2.3, psutil, fastnumbers, protobuf, markdown, tensorboard, grpcio, termcolor, astor, gast, absl-py, tensorflow, tqdm, optimuspyspark, clarify, sqlalchemy, ipython-sql
 
 Or Install Anaconda on Linux for light data science and engineering tools
 ```shell
@@ -202,5 +193,3 @@ Or Install Anaconda on Linux for light data science and engineering tools
     sh $SPARK_HOME/sbin/start-all.sh
 ```
     to start the spark service. The web ui will be available at 127.0.1.1:8080 port.
-
-

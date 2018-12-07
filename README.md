@@ -21,26 +21,9 @@
 
     # Step 2: install pip and virtual environment
     sudo apt install python3-pip python-dev build-essential
-    sudo pip install --upgrade pip
-    sudo pip install --upgrade virtualenv
+    sudo pip3 install --upgrade pip
+    sudo pip3 install --upgrade virtualenv
 ```
-### Install ipython & jupyter
-```shell
-    sudo apt install ipython3
-    sudo pip3 install jupyter
-```
-iPython Data Science and Engineering Tools Installation
-```shell
-    sudo pip3 install numpy pandas scipy tensorflow
-    sudo pip3 install -U scikit-learn
-    sudo pip3 install matplotlib seaborn findspark
-    # or install optimuspyspark for all
-    sudo pip3 install optimuspyspark
-    # Optional: install ipython-sql to enable sql adaptible
-    sudo pip3 install ipython-sql
-```
-The eventual installed python packages include: pytz, python-dateutil, numpy, pandas, findspark, h5py, setuptools, kiwisolver, pyparsing,cycler, matplotlib, scipy, seaborn, keras-applications, keras-preprocessing, keras, pillow, pyarrow, multipledispatch, wrapt, deprecated, pyspark, atomicwrites, pluggy, py, more-itertools, pytest, nose, tabulate, ratelimit, ipython, vine, amqp, kombu, requests, pika, pymongo, backoff, itsdangerous, Werkzeug, flask, humanize, future, colorama, h2o-pysparkling-2.3, psutil, fastnumbers, protobuf, markdown, tensorboard, grpcio, termcolor, astor, gast, absl-py, tensorflow, tqdm, optimuspyspark, ipython-sql
-
 ### Install Spark
 ```shell
     # Step 1: Install Java
@@ -67,7 +50,7 @@ The eventual installed python packages include: pytz, python-dateutil, numpy, pa
 ### Install Git for Source Version Control
 ```shell
 sudo apt install git-all
-# or light install
+# or install light version
 sudo apt install git
 ```
 ### Install VS Code and Pycharm
@@ -93,6 +76,8 @@ sudo apt install git
     sudo apt install mysql-server
     # For fresh installations, runt eh included security script to change some of less secure default options
     sudo mysql_secure_installation
+    sudo pip3 pymysql
+    sudo pip3 install mysql-connector-python
 ```
 To start, stop, restart and enable MySQL at reboot, use
 ```shell
@@ -113,7 +98,7 @@ To connect MySQL locally, use
 ```shell
     sudo mysql -u root -p
 ```
-### Install SQL Server 2017 on Ubuntu 16.04 LTS
+### Install SQL Server 2017 on Ubuntu 16.04 LTS as Optional
 Note: the Windows Subsystem for Linux for Windows 10 is not supported as an installation target.
 ```shell
     sudo apt update
@@ -123,6 +108,7 @@ Note: the Windows Subsystem for Linux for Windows 10 is not supported as an inst
     curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
     sudo apt install -y mssql-server
     sudo /opt/mssql/bin/mssql-conf setup
+    sudo apt update
     sudo apt install mssql-tools unixodbc-dev
     # A cross-platform command-line interface for running Transact-SQL commands.
     sudo apt install mssql-cli # or pip3 install mssql-cli
@@ -150,6 +136,42 @@ To use mssql-cli, use
 ```shell
     mssql-cli -S localhost -U sa -d <database>
 ```
+### Install ipython & jupyter
+```shell
+    sudo pip3 install jupyter
+```
+iPython Data Science and Engineering Tools Installation
+```shell
+    sudo pip3 install numpy pandas scipy tensorflow
+    sudo pip3 install -U scikit-learn
+    sudo pip3 install matplotlib seaborn findspark
+    # or install optimuspyspark for all
+    sudo pip3 install optimuspyspark
+    sudo pip3 install sqlalchemy
+    # Optional: install ipython-sql to enable sql adaptible
+    sudo pip3 install ipython-sql
+```
+The eventual installed python packages include: pytz, python-dateutil, numpy, pandas, findspark, h5py, setuptools, kiwisolver, pyparsing,cycler, matplotlib, scipy, seaborn, keras-applications, keras-preprocessing, keras, pillow, pyarrow, multipledispatch, wrapt, deprecated, pyspark, atomicwrites, pluggy, py, more-itertools, pytest, nose, tabulate, ratelimit, ipython, vine, amqp, kombu, requests, pika, pymongo, backoff, itsdangerous, Werkzeug, flask, humanize, future, colorama, h2o-pysparkling-2.3, psutil, fastnumbers, protobuf, markdown, tensorboard, grpcio, termcolor, astor, gast, absl-py, tensorflow, tqdm, optimuspyspark, sqlalchemy, ipython-sql
+
+Or Install Anaconda on Linux for light data science and engineering tools
+```shell
+    # Step 1: Download Anaconda bash script
+    curl -O https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+
+    # Step 2: Verify the data integrity of the installer
+    sha256sum Anaconda3-5.2.0-Linux-x86_64.sh
+
+    # Step 3: Run the Anaconda script and complete installation process as prompted
+    bash Anaconda3-5.2.0-Linux-x86_64.sh
+
+    # Step 4: Activate and test installation
+    source ~/.bashrc
+    conda list
+
+    # Step 5: Setup Anaconda environments
+    conda create --name my_env python=3
+    source activate my_env
+```
 
 ### BASH Configuration
     In the ~/.bashrc file, add 
@@ -161,7 +183,6 @@ To use mssql-cli, use
     SPARK_HOME=/usr/local/spark/spark-2.4.0-bin-hadoop2.7
     export SPARK_HOME=$SPARK_HOME
     export PATH=$SPARK_HOME/bin:$PATH
-    export PATH=$PATH:/opt/mssql-tools/bin
 ```
     and then use the command
 ```
@@ -182,35 +203,4 @@ To use mssql-cli, use
 ```
     to start the spark service. The web ui will be available at 127.0.1.1:8080 port.
 
-### Use Anaconda on Linux:
-```shell
-    # Step 1: Download Anaconda bash script
-    curl -O https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
-
-    # Step 2: Verify the data integrity of the installer
-    sha256sum Anaconda3-5.2.0-Linux-x86_64.sh
-
-    # Step 3: Run the Anaconda script and complete installation process as prompted
-    bash Anaconda3-5.2.0-Linux-x86_64.sh
-
-    # Step 4: Activate and test installation
-    source ~/.bashrc
-    conda list
-
-    # Step 5: Setup Anaconda environments
-    conda create --name my_env python=3
-    source activate my_env
-```
-### Use Anaconda on Windows
-Step 1: Download anaconda executable (.exe) from the website of https://www.anaconda.com/download/#windows
-
-Step 2: Follow the installation wizard to install python and related libraries step-by-step
-
-### Jupyter Notebook with Spark
-Link jupyter notebook with Spark (pyspark)
-```python
-    import findspark
-    findspark.init()
-    import pyspark
-```
 

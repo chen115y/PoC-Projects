@@ -32,9 +32,26 @@ The [notebook](./jupyter_notes/Data_Analytics_Project.ipynb) is stored in the fo
 ```shell
     # check Java version
     java -version
+    # install java 8 
+    # some applications require java 8 rather than defaul java 9 or 10
     sudo apt update
-    sudo apt install default-jre
-    sudo apt install default-jdk
+    sudo apt install openjdk-8-jdk
+    # Set the Default Java Version to Java 8
+    sudo update-alternatives --config java
+    
+    output:
+    There are 3 choices for the alternative java (providing /usr/bin/java).
+
+    Selection    Path                                            Priority   Status
+    ------------------------------------------------------------
+    * 0            /usr/lib/jvm/java-11-openjdk-amd64/bin/java      1101      auto mode
+      1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java      1101      manual mode
+      2            /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java   1081      manual mode
+      3            /usr/lib/jvm/java-8-oracle/jre/bin/java          1081      manual mode
+      4            /usr/local/oracle-java-10/jdk-10.0.2/bin/java    1500      manual mode
+
+    Press <enter> to keep the current choice[*], or type selection number: 2
+
 
     # download latest spark and untar it
     wget -P /tmp/ http://apache.osuosl.org/spark/spark-2.4.0/spark-2.4.0-bin-hadoop2.7.tgz
@@ -46,9 +63,9 @@ The [notebook](./jupyter_notes/Data_Analytics_Project.ipynb) is stored in the fo
 ```
 ### Install Git for Source Version Control
 ```shell
-sudo apt install git-all
-# or install light version
-sudo apt install git
+    sudo apt install git-all
+    # or install light version
+    sudo apt install git
 ```
 ### Install a Hadoop Single Node Cluster
 Please following the instructions at [apache.org](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html) to setup a single node hadoop cluster.
@@ -164,6 +181,18 @@ The eventual installed python packages include: pytz, python-dateutil, numpy, pa
 ### Validating ipython jupyter notebook
 For validating if jupyter notebook is working well with SQL, Python and Shell commands, you can run the [Notebook_Validation.ipynb](./jupyter_notes/Notebook_Validation.ipynb) notebook.
 
+# Appendix - Java 8 Environment Configuration
+```shell
+    sudo nano /etc/environment
+    # add the following line at the end of file
+    JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+    # apply the change
+    source /etc/environment
+    # verify the JAVA_HOME environment variable
+    echo $JAVA_HOME
+    output:
+    /usr/lib/jvm/java-8-openjdk-amd64
+```
 
 # Appendix - Install Anaconda on Linux for light data science and engineering tools
 ```shell

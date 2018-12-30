@@ -11,7 +11,7 @@ The [notebook](./jupyter_notes/Data_Analytics_Project.ipynb) is stored in the fo
 ## Hardware Environment
 * 8 GB Memory
 * 2.60GHz 2 Cores CPU
-* 250 GB Hard Disck
+* 250 GB Hard Disk
 
 ### Install Linux Ubuntu
 

@@ -1,4 +1,10 @@
-# Learning Notes
+# Data Analytics Project
+In this project, I will demontrate how to implement a data analytics work by using jupyter notebook with Python libraries, such as pandas, numpy, sciki-learn, scipy, matplotlib, seaborn, etc.
+The [notebook](./jupyter_notes/Data_Analytics_Project.ipynb) is stored in the folder of jupyter_notes. The data sets can be found in the folder of datasets. The table of contents is given below.
+<h1>Table of Contents<span class="tocSkip"></span></h1>
+<div class="toc"><ul class="toc-item"><li><span><span class="toc-item-num">1&nbsp;&nbsp;</span>Introduction: Data Analytics Project</a></span><ul class="toc-item"><li><span><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Dataset</a></span></li><li><span><span class="toc-item-num">1.2&nbsp;&nbsp;</span>Python Library</a></span></li></ul></li><li><span><span class="toc-item-num">2&nbsp;&nbsp;</span>Exploratory Data Loading</a></span><ul class="toc-item"><li><span><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Data Loading</a></span><ul class="toc-item"><li><span><span class="toc-item-num">2.1.1&nbsp;&nbsp;</span>Read in data from csv files</a></span></li></ul></li><li><span><span class="toc-item-num">2.2&nbsp;&nbsp;</span>Data Set Information</a></span><ul class="toc-item"><li><span><span class="toc-item-num">2.2.1&nbsp;&nbsp;</span>Describe for numeric columns</a></span></li><li><span><span class="toc-item-num">2.2.2&nbsp;&nbsp;</span>Histogram of columns</a></span></li><li><span><span class="toc-item-num">2.2.3&nbsp;&nbsp;</span>Value counts for destination column</a></span></li></ul></li></ul></li><li><span><span class="toc-item-num">3&nbsp;&nbsp;</span>Data Engineering</a></span><ul class="toc-item"><li><span><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Generate Sample Data Set</a></span><ul class="toc-item"><li><span><span class="toc-item-num">3.1.1&nbsp;&nbsp;</span>Take samples</a></span></li><li><span><span class="toc-item-num">3.1.2&nbsp;&nbsp;</span>Combine three data sets</a></span></li></ul></li><li><span><span class="toc-item-num">3.2&nbsp;&nbsp;</span>Create Columns based on Existing Ones</a></span><ul class="toc-item"><li><span><span class="toc-item-num">3.2.1&nbsp;&nbsp;</span>Calculate distance for every driving history record</a></span></li><li><span><span class="toc-item-num">3.2.2&nbsp;&nbsp;</span>Determine the directions of driving vehicle</a></span></li><li><span><span class="toc-item-num">3.2.3&nbsp;&nbsp;</span>Calculate how many stops during one driving history</a></span></li><li><span><span class="toc-item-num">3.2.4&nbsp;&nbsp;</span>Calculate how fuel was added and purchased</a></span></li></ul></li><li><span><span class="toc-item-num">3.3&nbsp;&nbsp;</span>Extract Data Set for Machine Learning Use</a></span><ul class="toc-item"><li><span><span class="toc-item-num">3.3.1&nbsp;&nbsp;</span>Query data set</a></span></li><li><span><span class="toc-item-num">3.3.2&nbsp;&nbsp;</span>Data Set Profiling</a></span></li></ul></li><li><span><span class="toc-item-num">3.4&nbsp;&nbsp;</span>Data Exploration for Trending</a></span><ul class="toc-item"><li><span><span class="toc-item-num">3.4.1&nbsp;&nbsp;</span>Column distributions</a></span></li><li><span><span class="toc-item-num">3.4.2&nbsp;&nbsp;</span>Column distributions by different countries</a></span></li><li><span><span class="toc-item-num">3.4.3&nbsp;&nbsp;</span>Numerical correlations</a></span></li></ul></li><li><span><span class="toc-item-num">3.5&nbsp;&nbsp;</span>Generate Training and Testing Data Sets</a></span><ul class="toc-item"><li><span><span class="toc-item-num">3.5.1&nbsp;&nbsp;</span>Select most correlated 3 columns</a></span></li><li><span><span class="toc-item-num">3.5.2&nbsp;&nbsp;</span>Plots of Selected Columns Correlation Coefficient</a></span></li></ul></li></ul></li><li><span><span class="toc-item-num">4&nbsp;&nbsp;</span>Predictive Analytics with Machine Learning Approaches</a></span><ul class="toc-item"><li><span><span class="toc-item-num">4.1&nbsp;&nbsp;</span>Setup Metrics</a></span></li><li><span><span class="toc-item-num">4.2&nbsp;&nbsp;</span>Setup Baseline</a></span></li><li><span><span class="toc-item-num">4.3&nbsp;&nbsp;</span>Machine Learning Approaches</a></span></li><li><span><span class="toc-item-num">4.4&nbsp;&nbsp;</span>Visual Comparison of ML Approaches</a></span></li><li><span><span class="toc-item-num">4.5&nbsp;&nbsp;</span>Interpretable Formula with Ordinary Linear Regression</a></span></li></ul></li><li><span><span class="toc-item-num">5&nbsp;&nbsp;</span>Conclusions</a></span></li><li><span><span class="toc-item-num">6&nbsp;&nbsp;</span>Future Work</a></span></li></ul></div>
+
+# Environmental Setup
 
 ## Prerequisite Installation & Configuration On Linux
 
@@ -44,6 +50,9 @@ sudo apt install git-all
 # or install light version
 sudo apt install git
 ```
+### Install a Hadoop Single Node Cluster
+Please following the instructions at [apache.org](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html) to setup a single node hadoop cluster.
+
 ### Install VS Code and Pycharm
 ```shell
     # Virtual Studio Code
@@ -133,18 +142,30 @@ To use mssql-cli, use
 ```
 iPython Data Science and Engineering Tools Installation
 ```shell
-    sudo pip3 install numpy pandas scipy tensorflow
+    sudo pip3 install numpy pandas scipy tensorflow pymc3
     sudo pip3 install -U scikit-learn
-    sudo pip3 install matplotlib seaborn clarify findspark
-    # or install optimuspyspark for all
+    sudo pip3 install matplotlib seaborn clarify findspark 
+    # install optimuspyspark for all
     sudo pip3 install optimuspyspark
     sudo pip3 install sqlalchemy
+    sudo pip3 install pandas-profiling
+    sudo pip3 install spark-df-profiling
     # Optional: install ipython-sql to enable sql adaptible
     sudo pip3 install ipython-sql
+    # Optional: install jupyter extensions
+    sudo pip3 install jupyter_contrib_nbextensions # for python 3
+    sudo pip install jupyter_contrib_nbextensions # for python 2 if your ipython jupyter support both 2 & 3
+    sudo pip3 install autopep8 # for enable autopep8 extension
+    sudo jupyter contrib nbextension install --user
+    sudo chmod 777 ~/.jupyter/nbconfig/notebook.json # grant juypter extension to write data in this json file to load extensions later
 ```
 The eventual installed python packages include: pytz, python-dateutil, numpy, pandas, findspark, h5py, setuptools, kiwisolver, pyparsing,cycler, matplotlib, scipy, seaborn, keras-applications, keras-preprocessing, keras, pillow, pyarrow, multipledispatch, wrapt, deprecated, pyspark, atomicwrites, pluggy, py, more-itertools, pytest, nose, tabulate, ratelimit, ipython, vine, amqp, kombu, requests, pika, pymongo, backoff, itsdangerous, Werkzeug, flask, humanize, future, colorama, h2o-pysparkling-2.3, psutil, fastnumbers, protobuf, markdown, tensorboard, grpcio, termcolor, astor, gast, absl-py, tensorflow, tqdm, optimuspyspark, clarify, sqlalchemy, ipython-sql
 
-Or Install Anaconda on Linux for light data science and engineering tools
+### Validating ipython jupyter notebook
+For validating if jupyter notebook is working well with SQL, Python and Shell commands, you can run the [Notebook_Validation.ipynb](./jupyter_notes/Notebook_Validation.ipynb) notebook.
+
+
+# Appendix - Install Anaconda on Linux for light data science and engineering tools
 ```shell
     # Step 1: Download Anaconda bash script
     curl -O https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
@@ -164,7 +185,7 @@ Or Install Anaconda on Linux for light data science and engineering tools
     source activate my_env
 ```
 
-### BASH Configuration
+# Appendix - BASH Configuration
     In the ~/.bashrc file, add 
 ```bash
     export DISPLAY=localhost:0.0
@@ -194,5 +215,10 @@ Or Install Anaconda on Linux for light data science and engineering tools
 ```
     to start the spark service. The web ui will be available at 127.0.1.1:8080 port.
 
-### Vim Configuration    
+# Appendix - Vim Configuration    
 * Use the [vimrc](./vim/vimrc) in the folder [vim](vim/) to replace `~/.vim/vimrc`
+
+# Appendix - Install web Scrape tools
+```shell
+    sudo pip3 install scrapy beautifulsoup4
+```

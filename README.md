@@ -1,10 +1,6 @@
 # Data Analytics Project
 In this project, I will demontrate how to implement a data analytics work by using jupyter notebook with a local solution and a distributed solution:
-<<<<<<< HEAD
 * [Data Analytics - Local Implementation](./jupyter_notes/Data_Analytics_Project.ipynb) - Local Solution with Python libraries such as pandas, numpy, scikit-learn, scipy, matplotlib, seaborn, etc.
-=======
-* [Data Analytics - Local Implementation](./jupyter_notes/Data_Analytics_Project.ipynb) - Local Solution with Python libraries such as pandas, numpy, sciki-learn, scipy, matplotlib, seaborn, etc.
->>>>>>> 62d48c7281827217fdb1f79a9bbb9d536b7760e8
 * [Data Analytics - Spark Implementation](./jupyter_notes/Data_Analytics_Project_Spark.ipynb) - Distributed Solution with Spark and Pyspark library
 
 The notebooks are stored in the folder of jupyter_notes. The [data sets](./datasets/) can be found in the folder of datasets. The notebooks contain the same table of contents as below.
@@ -16,8 +12,4 @@ In order to implement and test this project, the [Environmental Setup](./Environ
 * Prerequisite Installation & Configuration On Linux, Python, Spark and MySQL
 * Installation & Configuration of Jupyter Notebook
 
-<<<<<<< HEAD
 The step-by-step instructions can be found at this [link](./Environment_Setup.md)
-=======
-The step-by-step instructions can be found at this [link](./Environment_Setup.md)
->>>>>>> 62d48c7281827217fdb1f79a9bbb9d536b7760e8

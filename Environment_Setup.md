@@ -139,9 +139,10 @@ To connect MySQL locally, use
     sudo pip3 install autopep8 # for enable autopep8 extension
 ```
 ### Jupyter Notebook Extension Configuration
-``` 
+```shell
     sudo jupyter contrib nbextension install --user
-    sudo chmod 777 ~/.jupyter/nbconfig/notebook.json # grant juypter extension to write data in this json file to load extensions later
+    # grant juypter extension to write data in this json file to load extensions later
+    sudo chmod a+rw ~/.jupyter/nbconfig/notebook.json 
 ```
 The eventual installed python packages include: pytz, python-dateutil, numpy, pandas, findspark, h5py, setuptools, kiwisolver, pyparsing,cycler, matplotlib, scipy, seaborn, keras-applications, keras-preprocessing, keras, pillow, pyarrow, multipledispatch, wrapt, deprecated, pyspark, atomicwrites, pluggy, py, more-itertools, pytest, nose, tabulate, ratelimit, ipython, vine, amqp, kombu, requests, pika, pymongo, backoff, itsdangerous, Werkzeug, flask, humanize, future, colorama, h2o-pysparkling-2.3, psutil, fastnumbers, protobuf, markdown, tensorboard, grpcio, termcolor, astor, gast, absl-py, tensorflow, tqdm, optimuspyspark, clarify, sqlalchemy, ipython-sql
 

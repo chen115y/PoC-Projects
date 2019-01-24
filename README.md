@@ -1,4 +1,4 @@
-# Data Analytics Project
+# Data Analytics (Machine Learning) Project
 In this project, I will demontrate how to implement a data analytics work by using jupyter notebook with a local solution and a distributed solution:
 * [Data Analytics - Local Implementation](./jupyter_notes/Data_Analytics_Project.ipynb) - A local solution with Python libraries such as pandas, numpy, scikit-learn, etc. [[pdf]](./jupyter_notes/Data_Analytics_Project.pdf)
 * [Data Analytics - Spark Implementation](./jupyter_notes/Data_Analytics_Project_Spark.ipynb) - A distributed solution with Spark and Pyspark libraries. [[pdf]](./jupyter_notes/Data_Analytics_Project_Spark.pdf)

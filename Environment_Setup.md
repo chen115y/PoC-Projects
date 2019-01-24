@@ -130,6 +130,11 @@ To connect MySQL locally, use
     sudo pip3 install pandas-profiling
     sudo pip3 install spark-df-profiling
 
+    # install pdf Latex convertion libraries
+    wget -P /tmp/ https://github.com/jgm/pandoc/releases/download/2.5/pandoc-2.5-1-amd64.deb
+    sudo dpkg -i pandoc-2.5-1-amd64.deb
+    sudo apt install texlive-xetex
+
     # Optional: install ipython-sql to enable sql adaptible
     sudo pip3 install ipython-sql
 

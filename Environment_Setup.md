@@ -268,3 +268,24 @@ To use mssql-cli, use
 ```shell
     mssql-cli -S localhost -U sa -d <database>
 ```
+
+## Install PostgreSQL 10 on Ubuntu 18.04 LTS
+Add PostgreSQL repository to Ubuntu 18.04
+```shell
+    wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+    sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main" > /etc/apt/sources.list.d/PostgreSQL.list'
+```
+Update and install PostgreSQL and additional utilities and funcitonality
+```shell
+    sudo apt update
+    sudo apt install postgresql postgresql-contrib
+    # optional - install postgresql web client phpmyadmin
+    sudo apt install pgadmin3
+```
+After isntalling PostgreSQL, the commands below can be used to stop, start, enable and check its status
+```shell
+    sudo systemctl stop postgresql.service
+    sudo systemctl start postgresql.service
+    sudo systemctl enable postgresql.service
+    sudo systemctl status postgresql.service
+```

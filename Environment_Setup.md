@@ -22,6 +22,8 @@
     sudo apt install python3-pip python-dev build-essential
     sudo pip3 install --upgrade pip
     sudo pip3 install --upgrade virtualenv
+    # install the tool to create python application executables
+    sudo pip3 install pyinstaller
 ```
 ### Install Spark
 ```shell

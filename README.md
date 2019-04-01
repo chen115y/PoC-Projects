@@ -1,7 +1,7 @@
 # Data Analytics (Machine Learning) Project
 In this project, I will demontrate how to implement a data analytics work by using jupyter notebook with a local solution and a distributed solution:
-* [Data Analytics - Local Implementation](./jupyter_notes/Data_Analytics_Project.ipynb) - A local solution with Python libraries such as pandas, numpy, scikit-learn, etc. [[pdf]](./jupyter_notes/Data_Analytics_Project.pdf)
-* [Data Analytics - Spark Implementation](./jupyter_notes/Data_Analytics_Project_Spark.ipynb) - A distributed solution with Spark and Pyspark libraries. [[pdf]](./jupyter_notes/Data_Analytics_Project_Spark.pdf)
+* [Data Analytics - Local Implementation](./jupyter_notes/Data_Analytics_Project.ipynb) [[pdf]](./jupyter_notes/Data_Analytics_Project.pdf) - A local solution with Python libraries such as pandas, numpy, scikit-learn, etc.
+* [Data Analytics - Spark Implementation](./jupyter_notes/Data_Analytics_Project_Spark.ipynb) [[pdf]](./jupyter_notes/Data_Analytics_Project_Spark.pdf) - A distributed solution with Spark and Pyspark libraries. 
 
 The [notebooks](./jupyter_notes/) are stored in the folder of jupyter_notes. The [data sets](./datasets/) can be found in the folder of datasets. The notebooks contain the same table of contents shown as below.
 <h1>Table of Contents<span class="tocSkip"></span></h1>

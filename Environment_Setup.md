@@ -13,6 +13,15 @@
 * [Ubuntu Linux 18.04 LTS](https://www.ubuntu.com/download/desktop)
 * [Windows Subsystem for Linux - Ubuntu](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
+### Install basic packages
+
+```shell
+    sudo apt update
+    sudo apt install tmux
+    sudo apt install wget curl
+    sudo apt install -y openssh-server
+```
+
 ### Install Python 3.X
 ```shell
     # sudo add-apt-repository ppa:jonathonf/python-3.6
@@ -51,9 +60,9 @@
 
 
     # download latest spark and untar it
-    wget -P /tmp/ http://apache.osuosl.org/spark/spark-2.4.0/spark-2.4.0-bin-hadoop2.7.tgz
+    wget -P /tmp/ http://apache.osuosl.org/spark/spark-2.4.1/spark-2.4.1-bin-hadoop2.7.tgz
     sudo mkdir /usr/local/spark/
-    sudo tar xvf /tmp/spark-2.4.0-bin-hadoop2.7.tgz -C /usr/local/spark
+    sudo tar xvf /tmp/spark-2.4.1-bin-hadoop2.7.tgz -C /usr/local/spark
     
     # installing pyspark with pip
     sudo pip3 install pyspark
@@ -118,12 +127,16 @@ To connect MySQL locally, use
 ### Install Jupyter Notebook
 ```shell
     sudo pip3 install jupyter
+    sudo chmod 777 ~/.local/share/jupyter/
 ```
 ### iPython Data Science and Engineering Tools Installation
 ```shell
     # install standard data science libraries
     sudo pip3 install numpy pandas scipy tensorflow pymc3
+    sudo pip3 install statsmodels fbprophet
     sudo pip3 install -U scikit-learn
+    # install time series libraries
+    sudo pip3 install statsmodels fbprophet
     sudo pip3 install matplotlib seaborn clarify findspark 
 
     # install optimuspyspark for all
@@ -134,7 +147,7 @@ To connect MySQL locally, use
 
     # install pdf Latex convertion libraries
     wget -P /tmp/ https://github.com/jgm/pandoc/releases/download/2.5/pandoc-2.5-1-amd64.deb
-    sudo dpkg -i pandoc-2.5-1-amd64.deb
+    sudo dpkg -i /tmp/pandoc-2.5-1-amd64.deb
     sudo apt install texlive-xetex
 
     # Optional: install ipython-sql to enable sql adaptible

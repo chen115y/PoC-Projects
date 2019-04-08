@@ -72,6 +72,8 @@
     sudo apt install git-all
     # or install light version
     sudo apt install git
+    git config --global user.email "chen115yaohua@gmail.com"
+    git config --global user.name "Ivan Chen"
 ```
 ### Install a Hadoop Single Node Cluster
 Please following the instructions at [apache.org](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html) to setup a single node hadoop cluster.

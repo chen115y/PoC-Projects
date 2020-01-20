@@ -133,27 +133,42 @@ To connect MySQL locally, use
 ```
 ### iPython Data Science and Engineering Tools Installation
 ```shell
-    # install standard data science libraries
-    sudo pip3 install numpy pandas scipy tensorflow pymc3
-    sudo pip3 install statsmodels fbprophet
-    sudo pip3 install -U scikit-learn
-    # install time series libraries
-    sudo pip3 install statsmodels fbprophet
-    sudo pip3 install matplotlib seaborn clarify findspark 
+    sudo pip3 install numpy pandas scipy tensorflow pymc3 keras xlrd pyarrow
+    sudo pip3 install -U scikit-learn xgboost
+    sudo pip3 install pillow
+    sudo pip3 install h5py pytables
+    # natural language processing
+    sudo pip3 install nltk textblob smart_open gensim
+    sudo python3 -m textblob.download_corpora
+    # parallel processing
+    sudo pip3 install dask dask-ml dask-searchcv numba multiprocess ipyparallel distributed joblib
+    # visualization
+    sudo pip3 install matplotlib seaborn clarify
+    # install pytorch for latest python version 3.7
+    sudo pip3 install https://download.pytorch.org/whl/cpu/torch-1.0.1.post2-cp37-cp37m-linux_x86_64.whl
+    sudo pip3 install torchvision
 
-    # install optimuspyspark for all
-    sudo pip3 install optimuspyspark
+    # sudo pip3 install optimuspyspark
     sudo pip3 install sqlalchemy
     sudo pip3 install pandas-profiling
     sudo pip3 install spark-df-profiling
 
-    # install pdf Latex convertion libraries
     wget -P /tmp/ https://github.com/jgm/pandoc/releases/download/2.5/pandoc-2.5-1-amd64.deb
     sudo dpkg -i /tmp/pandoc-2.5-1-amd64.deb
-    sudo apt install texlive-xetex
-
-    # Optional: install ipython-sql to enable sql adaptible
+    sudo apt install -y texlive-xetex
+    # for SQL magic function
     sudo pip3 install ipython-sql
+    # for R magic function
+    sudo pip3 install rpy2 tzlocal
+    # for notebook extensions
+    sudo pip3 install jupyter_contrib_nbextensions
+    sudo pip3 install autopep8
+    # install and enable jupyter themes, especially dark one
+    # for web scrawler
+    sudo pip3 install scrapy beautifulsoup4
+
+    # time Series
+    sudo pip3 install pystan statsmodels fbprophet
 
     # Optional: install jupyter extensions
     sudo pip3 install jupyter_contrib_nbextensions # for python 3

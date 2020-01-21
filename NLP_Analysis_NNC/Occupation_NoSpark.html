@@ -13078,7 +13078,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p></p><h1>Table of Contents<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Introduction:-NLP-Learning-for-Job-Descriptions" data-toc-modified-id="Introduction:-NLP-Learning-for-Job-Descriptions-1"><span class="toc-item-num">1  </span>Introduction: NLP Learning for Job Descriptions</a></span><ul class="toc-item"><li><span><a href="#Dataset" data-toc-modified-id="Dataset-1.1"><span class="toc-item-num">1.1  </span>Dataset</a></span></li><li><span><a href="#Python-Library" data-toc-modified-id="Python-Library-1.2"><span class="toc-item-num">1.2  </span>Python Library</a></span></li></ul></li><li><span><a href="#Data-Set-Loading-and-Cleaning-Up" data-toc-modified-id="Data-Set-Loading-and-Cleaning-Up-2"><span class="toc-item-num">2  </span>Data Set Loading and Cleaning Up</a></span><ul class="toc-item"><li><span><a href="#Load-Job-Description-CSV-Data" data-toc-modified-id="Load-Job-Description-CSV-Data-2.1"><span class="toc-item-num">2.1  </span>Load Job Description CSV Data</a></span></li><li><span><a href="#Clean-Up" data-toc-modified-id="Clean-Up-2.2"><span class="toc-item-num">2.2  </span>Clean Up</a></span></li></ul></li><li><span><a href="#Text-Feature-Engineering" data-toc-modified-id="Text-Feature-Engineering-3"><span class="toc-item-num">3  </span>Text Feature Engineering</a></span><ul class="toc-item"><li><span><a href="#Tokenization" data-toc-modified-id="Tokenization-3.1"><span class="toc-item-num">3.1  </span>Tokenization</a></span></li><li><span><a href="#Stopword-Removal" data-toc-modified-id="Stopword-Removal-3.2"><span class="toc-item-num">3.2  </span>Stopword Removal</a></span></li><li><span><a href="#Lemmatization" data-toc-modified-id="Lemmatization-3.3"><span class="toc-item-num">3.3  </span>Lemmatization</a></span></li><li><span><a href="#Word-Embedding-Vectors-with-Gensim" data-toc-modified-id="Word-Embedding-Vectors-with-Gensim-3.4"><span class="toc-item-num">3.4  </span>Word Embedding Vectors with Gensim</a></span><ul class="toc-item"><li><span><a href="#Word2Vec-Mean-Vector" data-toc-modified-id="Word2Vec-Mean-Vector-3.4.1"><span class="toc-item-num">3.4.1  </span>Word2Vec Mean Vector</a></span></li><li><span><a href="#Covert-Vectors-into-Columns" data-toc-modified-id="Covert-Vectors-into-Columns-3.4.2"><span class="toc-item-num">3.4.2  </span>Covert Vectors into Columns</a></span></li></ul></li></ul></li><li><span><a href="#Training-and-Testing-Data-Preparation" data-toc-modified-id="Training-and-Testing-Data-Preparation-4"><span class="toc-item-num">4  </span>Training and Testing Data Preparation</a></span><ul class="toc-item"><li><span><a href="#Standard-Scaling" data-toc-modified-id="Standard-Scaling-4.1"><span class="toc-item-num">4.1  </span>Standard Scaling</a></span></li><li><span><a href="#Label-Encoding" data-toc-modified-id="Label-Encoding-4.2"><span class="toc-item-num">4.2  </span>Label Encoding</a></span></li><li><span><a href="#Data-Splits-for-Training-and-Testing-Data-Sets" data-toc-modified-id="Data-Splits-for-Training-and-Testing-Data-Sets-4.3"><span class="toc-item-num">4.3  </span>Data Splits for Training and Testing Data Sets</a></span></li></ul></li><li><span><a href="#Neural-Network-Classification" data-toc-modified-id="Neural-Network-Classification-5"><span class="toc-item-num">5  </span>Neural Network Classification</a></span><ul class="toc-item"><li><span><a href="#Neural-Network-Multi-class-Classifier-Training" data-toc-modified-id="Neural-Network-Multi-class-Classifier-Training-5.1"><span class="toc-item-num">5.1  </span>Neural Network Multi-class Classifier Training</a></span></li><li><span><a href="#Training-Validation" data-toc-modified-id="Training-Validation-5.2"><span class="toc-item-num">5.2  </span>Training Validation</a></span></li></ul></li><li><span><a href="#Summary" data-toc-modified-id="Summary-6"><span class="toc-item-num">6  </span>Summary</a></span></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#Introduction:-NLP-Learning-for-Job-Descriptions" data-toc-modified-id="Introduction:-NLP-Learning-for-Job-Descriptions-1"><span class="toc-item-num">1  </span>Introduction: NLP Learning for Job Descriptions</a></span><ul class="toc-item"><li><span><a href="#Dataset" data-toc-modified-id="Dataset-1.1"><span class="toc-item-num">1.1  </span>Dataset</a></span></li><li><span><a href="#Python-Library" data-toc-modified-id="Python-Library-1.2"><span class="toc-item-num">1.2  </span>Python Library</a></span></li></ul></li><li><span><a href="#Data-Set-Loading-and-Cleaning-Up" data-toc-modified-id="Data-Set-Loading-and-Cleaning-Up-2"><span class="toc-item-num">2  </span>Data Set Loading and Cleaning Up</a></span><ul class="toc-item"><li><span><a href="#Load-Job-Description-CSV-Data" data-toc-modified-id="Load-Job-Description-CSV-Data-2.1"><span class="toc-item-num">2.1  </span>Load Job Description CSV Data</a></span></li><li><span><a href="#Clean-Up" data-toc-modified-id="Clean-Up-2.2"><span class="toc-item-num">2.2  </span>Clean Up</a></span></li></ul></li><li><span><a href="#Text-Feature-Engineering" data-toc-modified-id="Text-Feature-Engineering-3"><span class="toc-item-num">3  </span>Text Feature Engineering</a></span><ul class="toc-item"><li><span><a href="#Tokenization" data-toc-modified-id="Tokenization-3.1"><span class="toc-item-num">3.1  </span>Tokenization</a></span></li><li><span><a href="#Stopword-Removal" data-toc-modified-id="Stopword-Removal-3.2"><span class="toc-item-num">3.2  </span>Stopword Removal</a></span></li><li><span><a href="#Lemmatization" data-toc-modified-id="Lemmatization-3.3"><span class="toc-item-num">3.3  </span>Lemmatization</a></span></li><li><span><a href="#Word-Embedding-Vectors-with-Gensim" data-toc-modified-id="Word-Embedding-Vectors-with-Gensim-3.4"><span class="toc-item-num">3.4  </span>Word Embedding Vectors with Gensim</a></span><ul class="toc-item"><li><span><a href="#Word2Vec-Vectorization" data-toc-modified-id="Word2Vec-Vectorization-3.4.1"><span class="toc-item-num">3.4.1  </span>Word2Vec Vectorization</a></span><ul class="toc-item"><li><span><a href="#Gensim-Word2Vec-Model" data-toc-modified-id="Gensim-Word2Vec-Model-3.4.1.1"><span class="toc-item-num">3.4.1.1  </span>Gensim Word2Vec Model</a></span></li><li><span><a href="#Gensim-Doc2Vec-Model" data-toc-modified-id="Gensim-Doc2Vec-Model-3.4.1.2"><span class="toc-item-num">3.4.1.2  </span>Gensim Doc2Vec Model</a></span></li><li><span><a href="#Google-Pre-train-Word2Vec-Model" data-toc-modified-id="Google-Pre-train-Word2Vec-Model-3.4.1.3"><span class="toc-item-num">3.4.1.3  </span>Google Pre-train Word2Vec Model</a></span></li></ul></li><li><span><a href="#Covert-Vectors-into-Columns" data-toc-modified-id="Covert-Vectors-into-Columns-3.4.2"><span class="toc-item-num">3.4.2  </span>Covert Vectors into Columns</a></span></li></ul></li></ul></li><li><span><a href="#Training-and-Testing-Data-Preparation" data-toc-modified-id="Training-and-Testing-Data-Preparation-4"><span class="toc-item-num">4  </span>Training and Testing Data Preparation</a></span><ul class="toc-item"><li><span><a href="#Standard-Scaling" data-toc-modified-id="Standard-Scaling-4.1"><span class="toc-item-num">4.1  </span>Standard Scaling</a></span></li><li><span><a href="#Label-Encoding" data-toc-modified-id="Label-Encoding-4.2"><span class="toc-item-num">4.2  </span>Label Encoding</a></span></li><li><span><a href="#Data-Splits-for-Training-and-Testing-Data-Sets" data-toc-modified-id="Data-Splits-for-Training-and-Testing-Data-Sets-4.3"><span class="toc-item-num">4.3  </span>Data Splits for Training and Testing Data Sets</a></span></li></ul></li><li><span><a href="#Neural-Network-Classification" data-toc-modified-id="Neural-Network-Classification-5"><span class="toc-item-num">5  </span>Neural Network Classification</a></span><ul class="toc-item"><li><span><a href="#Neural-Network-Multi-class-Classifier-Training" data-toc-modified-id="Neural-Network-Multi-class-Classifier-Training-5.1"><span class="toc-item-num">5.1  </span>Neural Network Multi-class Classifier Training</a></span></li><li><span><a href="#Training-Validation" data-toc-modified-id="Training-Validation-5.2"><span class="toc-item-num">5.2  </span>Training Validation</a></span></li></ul></li><li><span><a href="#Summary" data-toc-modified-id="Summary-6"><span class="toc-item-num">6  </span>Summary</a></span></li></ul></div>
 </div>
 </div>
 </div>
@@ -13087,7 +13087,8 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Introduction:-NLP-Learning-for-Job-Descriptions">Introduction: NLP Learning for Job Descriptions<a class="anchor-link" href="#Introduction:-NLP-Learning-for-Job-Descriptions">¶</a></h1><p>In this notebook, I will demonstrate how to process unstructure text feature data by using natural language processing (NLP) technologies and train a classification model with those text features. I will use NLTK and gensim word2vec to do text feature engineering and then use multi-class neural network classifier to train a classification model.</p>
 <h2 id="Dataset">Dataset<a class="anchor-link" href="#Dataset">¶</a></h2><p>The dataset is a historical data of job descriptions stored as "job_descriptions.csv" file.</p>
-<h2 id="Python-Library">Python Library<a class="anchor-link" href="#Python-Library">¶</a></h2>
+<h2 id="Python-Library">Python Library<a class="anchor-link" href="#Python-Library">¶</a></h2><p>Please note I will be using Python 3.6, Gensim 3.8.1, Pandas 0.25.3, and Numpy v1.18.1</p>
+
 </div>
 </div>
 </div>
@@ -13131,7 +13132,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">gensim.models</span> <span class="kn">import</span> <span class="n">Word2Vec</span>
-<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="c1"># in case NLTK downloading needs ssl</span>
 <span class="kn">import</span> <span class="nn">ssl</span>
 <span class="k">try</span><span class="p">:</span>
     <span class="n">_create_unverified_https_context</span> <span class="o">=</span> <span class="n">ssl</span><span class="o">.</span><span class="n">_create_unverified_context</span>
@@ -13139,10 +13140,12 @@ div#notebook {
     <span class="k">pass</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">ssl</span><span class="o">.</span><span class="n">_create_default_https_context</span> <span class="o">=</span> <span class="n">_create_unverified_https_context</span>
-    
+<span class="kn">import</span> <span class="nn">nltk</span>
 <span class="c1"># Stop Word Removal</span>
 <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+<span class="c1"># Word Tokenization</span>
 <span class="c1"># from nltk.tokenize import word_tokenize</span>
+<span class="c1"># Lemmatization</span>
 <span class="kn">from</span> <span class="nn">nltk.stem</span> <span class="kn">import</span> <span class="n">WordNetLemmatizer</span>
 <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">wordnet</span>
 </pre></div>
@@ -13944,8 +13947,15 @@ memory usage: 4.9+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Word2Vec-Mean-Vector">Word2Vec Mean Vector<a class="anchor-link" href="#Word2Vec-Mean-Vector">¶</a></h3><p>Gensim Word2Vec will generate a vector (dimension of 100 here) for each word after training based on all job descriptions. So, I will define a function to get average (mean) vectors for a job description.</p>
+<h3 id="Word2Vec-Vectorization">Word2Vec Vectorization<a class="anchor-link" href="#Word2Vec-Vectorization">¶</a></h3><p>Gensim Word2Vec will generate a vector (dimension of 100 here) for each word after training based on all job descriptions. So, I will define a function to get average (mean) vectors for a job description.</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Gensim-Word2Vec-Model">Gensim Word2Vec Model<a class="anchor-link" href="#Gensim-Word2Vec-Model">¶</a></h4>
 </div>
 </div>
 </div>
@@ -14011,11 +14021,11 @@ memory usage: 4.9+ MB
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define a function to get average (mean) vectors for a job description based on trained word2vec model</span>
-<span class="k">def</span> <span class="nf">get_mean_vectors</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">get_mean_vectors</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">model</span><span class="p">):</span>
     <span class="c1"># remove out of vocabulary words</span>
-    <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">model_w2v</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">vocab</span><span class="p">]</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">vocab</span><span class="p">]</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">model_w2v</span><span class="p">[</span><span class="n">words</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="n">words</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="p">[]</span>
 </pre></div>
@@ -14031,7 +14041,7 @@ memory usage: 4.9+ MB
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Apply the function to generate 100 dimension vectors for each job description in the data set</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">'job_description_vectors'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">get_mean_vectors</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">job_description</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<span class="n">df</span><span class="p">[</span><span class="s1">'job_description_vectors'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">get_mean_vectors</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">job_description</span><span class="p">,</span> <span class="n">model_w2v</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
 <span class="c1"># Show some sample results</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -14143,7 +14153,7 @@ memory usage: 4.9+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Actually, I can use gensim library Doc2Vec function to generate vectors as well.  However, I don't choose this method due to relatively too large files that Doc2Vec function will produce (see the screen shot below). Any interested in the discussion on Word2Vec vs. Doc2Vec, it can be refer to this <a href="https://datascience.stackexchange.com/questions/20076/word2vec-vs-sentence2vec-vs-doc2vec">link</a></p>
+<h4 id="Gensim-Doc2Vec-Model">Gensim Doc2Vec Model<a class="anchor-link" href="#Gensim-Doc2Vec-Model">¶</a></h4><p>Actually, I can use gensim library Doc2Vec function to generate vectors as well.  However, I don't choose this method due to relatively too large files that Doc2Vec function will produce (see the screen shot below). Any interested in the discussion on Word2Vec vs. Doc2Vec, it can be referred to this <a href="https://datascience.stackexchange.com/questions/20076/word2vec-vs-sentence2vec-vs-doc2vec">link</a></p>
 
 </div>
 </div>
@@ -14156,12 +14166,20 @@ memory usage: 4.9+ MB
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following codes will show how to do word embedding vectorization with Doc2Vec class.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In [19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Prepare tagged documents for training</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Prepare tagged documents for Doc2Vec model training</span>
 <span class="n">descriptions</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'job_description'</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 <span class="n">tags</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'req_guid'</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 <span class="n">docs</span> <span class="o">=</span> <span class="p">[]</span>
@@ -14219,6 +14237,43 @@ memory usage: 4.9+ MB
 <span class="n">df</span><span class="p">[</span><span class="s1">'job_description_vectors'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">model_d2v</span><span class="o">.</span><span class="n">infer_vector</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">job_description</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="c1"># or directly retrieve from tagged documents</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">'job_description_vectors'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">model_d2v</span><span class="o">.</span><span class="n">docvecs</span><span class="p">[</span><span class="s2">"Train-"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">req_guid</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Google-Pre-train-Word2Vec-Model">Google Pre-train Word2Vec Model<a class="anchor-link" href="#Google-Pre-train-Word2Vec-Model">¶</a></h4><p>Another way to do word2vec vectorization is to use some pre-trained model. Actually, I downloaded Google’s pre-trained model from <a href="https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing">here</a>. It’s 1.5GB! It includes word vectors for a vocabulary of 3 million words and phrases that they trained on roughly 100 billion words from a Google News dataset. The vector length is 300 features. The detailed introduction of this Google pre-trained word2vec model can be found <a href="https://code.google.com/archive/p/word2vec/">here</a> and <a href="https://mccormickml.com/2016/04/12/googles-pretrained-word2vec-model-in-python/">here</a></p>
+<p>Loading this model using gensim is very easy; I just need to pass in the path to the model file as shown below. And then applying the function of get_mean_vectors() to produce vectors for each job description.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load Google pre-trained model</span>
+<span class="n">model_google</span> <span class="o">=</span> <span class="n">gensim</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Word2Vec</span><span class="o">.</span><span class="n">load_word2vec_format</span><span class="p">(</span><span class="s1">'./GoogleNews-vectors-negative300.bin'</span><span class="p">,</span> <span class="n">binary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Apply get_mean_vector function to get vectors for each job description</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'job_description_vectors'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">get_mean_vectors</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">job_description</span><span class="p">,</span> <span class="n">model_google</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
     </div>

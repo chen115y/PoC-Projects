@@ -13078,7 +13078,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p></p><h1>Table of Contents<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Introduction:-NLP-Learning-for-Job-Descriptions" data-toc-modified-id="Introduction:-NLP-Learning-for-Job-Descriptions-1"><span class="toc-item-num">1  </span>Introduction: NLP Learning for Job Descriptions</a></span><ul class="toc-item"><li><span><a href="#Dataset" data-toc-modified-id="Dataset-1.1"><span class="toc-item-num">1.1  </span>Dataset</a></span></li><li><span><a href="#Python-Library" data-toc-modified-id="Python-Library-1.2"><span class="toc-item-num">1.2  </span>Python Library</a></span></li></ul></li><li><span><a href="#Data-Set-Loading-and-Cleaning-Up" data-toc-modified-id="Data-Set-Loading-and-Cleaning-Up-2"><span class="toc-item-num">2  </span>Data Set Loading and Cleaning Up</a></span><ul class="toc-item"><li><span><a href="#Load-Job-Description-CSV-Data" data-toc-modified-id="Load-Job-Description-CSV-Data-2.1"><span class="toc-item-num">2.1  </span>Load Job Description CSV Data</a></span></li><li><span><a href="#Clean-Up" data-toc-modified-id="Clean-Up-2.2"><span class="toc-item-num">2.2  </span>Clean Up</a></span></li></ul></li><li><span><a href="#Text-Feature-Engineering" data-toc-modified-id="Text-Feature-Engineering-3"><span class="toc-item-num">3  </span>Text Feature Engineering</a></span><ul class="toc-item"><li><span><a href="#Tokenization" data-toc-modified-id="Tokenization-3.1"><span class="toc-item-num">3.1  </span>Tokenization</a></span></li><li><span><a href="#Stopword-Removal" data-toc-modified-id="Stopword-Removal-3.2"><span class="toc-item-num">3.2  </span>Stopword Removal</a></span></li><li><span><a href="#Lemmatization" data-toc-modified-id="Lemmatization-3.3"><span class="toc-item-num">3.3  </span>Lemmatization</a></span></li><li><span><a href="#Word-Embedding-Vectors-with-Gensim" data-toc-modified-id="Word-Embedding-Vectors-with-Gensim-3.4"><span class="toc-item-num">3.4  </span>Word Embedding Vectors with Gensim</a></span><ul class="toc-item"><li><span><a href="#Word2Vec-Vectorization" data-toc-modified-id="Word2Vec-Vectorization-3.4.1"><span class="toc-item-num">3.4.1  </span>Word2Vec Vectorization</a></span><ul class="toc-item"><li><span><a href="#Gensim-Word2Vec-Model" data-toc-modified-id="Gensim-Word2Vec-Model-3.4.1.1"><span class="toc-item-num">3.4.1.1  </span>Gensim Word2Vec Model</a></span></li><li><span><a href="#Gensim-Doc2Vec-Model" data-toc-modified-id="Gensim-Doc2Vec-Model-3.4.1.2"><span class="toc-item-num">3.4.1.2  </span>Gensim Doc2Vec Model</a></span></li><li><span><a href="#Google-Pre-train-Word2Vec-Model" data-toc-modified-id="Google-Pre-train-Word2Vec-Model-3.4.1.3"><span class="toc-item-num">3.4.1.3  </span>Google Pre-train Word2Vec Model</a></span></li></ul></li><li><span><a href="#Covert-Vectors-into-Columns" data-toc-modified-id="Covert-Vectors-into-Columns-3.4.2"><span class="toc-item-num">3.4.2  </span>Covert Vectors into Columns</a></span></li></ul></li></ul></li><li><span><a href="#Training-and-Testing-Data-Preparation" data-toc-modified-id="Training-and-Testing-Data-Preparation-4"><span class="toc-item-num">4  </span>Training and Testing Data Preparation</a></span><ul class="toc-item"><li><span><a href="#Standard-Scaling" data-toc-modified-id="Standard-Scaling-4.1"><span class="toc-item-num">4.1  </span>Standard Scaling</a></span></li><li><span><a href="#Label-Encoding" data-toc-modified-id="Label-Encoding-4.2"><span class="toc-item-num">4.2  </span>Label Encoding</a></span></li><li><span><a href="#Data-Splits-for-Training-and-Testing-Data-Sets" data-toc-modified-id="Data-Splits-for-Training-and-Testing-Data-Sets-4.3"><span class="toc-item-num">4.3  </span>Data Splits for Training and Testing Data Sets</a></span></li></ul></li><li><span><a href="#Neural-Network-Classification" data-toc-modified-id="Neural-Network-Classification-5"><span class="toc-item-num">5  </span>Neural Network Classification</a></span><ul class="toc-item"><li><span><a href="#Neural-Network-Multi-class-Classifier-Training" data-toc-modified-id="Neural-Network-Multi-class-Classifier-Training-5.1"><span class="toc-item-num">5.1  </span>Neural Network Multi-class Classifier Training</a></span></li><li><span><a href="#Training-Validation" data-toc-modified-id="Training-Validation-5.2"><span class="toc-item-num">5.2  </span>Training Validation</a></span></li></ul></li><li><span><a href="#Summary" data-toc-modified-id="Summary-6"><span class="toc-item-num">6  </span>Summary</a></span></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#Introduction:-NLP-Learning-for-Job-Descriptions" data-toc-modified-id="Introduction:-NLP-Learning-for-Job-Descriptions-1"><span class="toc-item-num">1  </span>Introduction: NLP Learning for Job Descriptions</a></span><ul class="toc-item"><li><span><a href="#Dataset" data-toc-modified-id="Dataset-1.1"><span class="toc-item-num">1.1  </span>Dataset</a></span></li><li><span><a href="#Python-Library" data-toc-modified-id="Python-Library-1.2"><span class="toc-item-num">1.2  </span>Python Library</a></span></li></ul></li><li><span><a href="#Data-Set-Loading-and-Cleaning-Up" data-toc-modified-id="Data-Set-Loading-and-Cleaning-Up-2"><span class="toc-item-num">2  </span>Data Set Loading and Cleaning Up</a></span><ul class="toc-item"><li><span><a href="#Load-Job-Description-CSV-Data" data-toc-modified-id="Load-Job-Description-CSV-Data-2.1"><span class="toc-item-num">2.1  </span>Load Job Description CSV Data</a></span></li><li><span><a href="#Clean-Up" data-toc-modified-id="Clean-Up-2.2"><span class="toc-item-num">2.2  </span>Clean Up</a></span></li></ul></li><li><span><a href="#Text-Feature-Engineering" data-toc-modified-id="Text-Feature-Engineering-3"><span class="toc-item-num">3  </span>Text Feature Engineering</a></span><ul class="toc-item"><li><span><a href="#Tokenization" data-toc-modified-id="Tokenization-3.1"><span class="toc-item-num">3.1  </span>Tokenization</a></span></li><li><span><a href="#Stopword-Removal" data-toc-modified-id="Stopword-Removal-3.2"><span class="toc-item-num">3.2  </span>Stopword Removal</a></span></li><li><span><a href="#Lemmatization" data-toc-modified-id="Lemmatization-3.3"><span class="toc-item-num">3.3  </span>Lemmatization</a></span></li><li><span><a href="#Word-Embedding-Vectors-with-Gensim" data-toc-modified-id="Word-Embedding-Vectors-with-Gensim-3.4"><span class="toc-item-num">3.4  </span>Word Embedding Vectors with Gensim</a></span><ul class="toc-item"><li><span><a href="#Word2Vec-Mean-Vector" data-toc-modified-id="Word2Vec-Mean-Vector-3.4.1"><span class="toc-item-num">3.4.1  </span>Word2Vec Mean Vector</a></span></li><li><span><a href="#Covert-Vectors-into-Columns" data-toc-modified-id="Covert-Vectors-into-Columns-3.4.2"><span class="toc-item-num">3.4.2  </span>Covert Vectors into Columns</a></span></li></ul></li></ul></li><li><span><a href="#Data-Preparation-for-Training-and-Testing" data-toc-modified-id="Data-Preparation-for-Training-and-Testing-4"><span class="toc-item-num">4  </span>Data Preparation for Training and Testing</a></span><ul class="toc-item"><li><span><a href="#Standard-Scaling" data-toc-modified-id="Standard-Scaling-4.1"><span class="toc-item-num">4.1  </span>Standard Scaling</a></span></li><li><span><a href="#Label-Encoding" data-toc-modified-id="Label-Encoding-4.2"><span class="toc-item-num">4.2  </span>Label Encoding</a></span></li><li><span><a href="#Data-Splits-for-Training-and-Testing-Data-Sets" data-toc-modified-id="Data-Splits-for-Training-and-Testing-Data-Sets-4.3"><span class="toc-item-num">4.3  </span>Data Splits for Training and Testing Data Sets</a></span></li></ul></li><li><span><a href="#Neural-Network-Classification" data-toc-modified-id="Neural-Network-Classification-5"><span class="toc-item-num">5  </span>Neural Network Classification</a></span><ul class="toc-item"><li><span><a href="#Neural-Network-Multi-class-Classifier-Training" data-toc-modified-id="Neural-Network-Multi-class-Classifier-Training-5.1"><span class="toc-item-num">5.1  </span>Neural Network Multi-class Classifier Training</a></span></li><li><span><a href="#Training-Validation" data-toc-modified-id="Training-Validation-5.2"><span class="toc-item-num">5.2  </span>Training Validation</a></span></li></ul></li><li><span><a href="#Summary" data-toc-modified-id="Summary-6"><span class="toc-item-num">6  </span>Summary</a></span></li></ul></div>
 </div>
 </div>
 </div>
@@ -13087,8 +13087,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Introduction:-NLP-Learning-for-Job-Descriptions">Introduction: NLP Learning for Job Descriptions<a class="anchor-link" href="#Introduction:-NLP-Learning-for-Job-Descriptions">¶</a></h1><p>In this notebook, I will demonstrate how to process unstructure text feature data by using natural language processing (NLP) technologies and train a classification model with those text features. I will use NLTK and gensim word2vec to do text feature engineering and then use multi-class neural network classifier to train a classification model.</p>
 <h2 id="Dataset">Dataset<a class="anchor-link" href="#Dataset">¶</a></h2><p>The dataset is a historical data of job descriptions stored as "job_descriptions.csv" file.</p>
-<h2 id="Python-Library">Python Library<a class="anchor-link" href="#Python-Library">¶</a></h2><p>Please note I will be using Python 3.6, Gensim 3.8.1, Pandas 0.25.3, and Numpy v1.18.1</p>
-
+<h2 id="Python-Library">Python Library<a class="anchor-link" href="#Python-Library">¶</a></h2>
 </div>
 </div>
 </div>
@@ -13132,7 +13131,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">gensim.models</span> <span class="kn">import</span> <span class="n">Word2Vec</span>
-<span class="c1"># in case NLTK downloading needs ssl</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
 <span class="kn">import</span> <span class="nn">ssl</span>
 <span class="k">try</span><span class="p">:</span>
     <span class="n">_create_unverified_https_context</span> <span class="o">=</span> <span class="n">ssl</span><span class="o">.</span><span class="n">_create_unverified_context</span>
@@ -13140,12 +13139,10 @@ div#notebook {
     <span class="k">pass</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">ssl</span><span class="o">.</span><span class="n">_create_default_https_context</span> <span class="o">=</span> <span class="n">_create_unverified_https_context</span>
-<span class="kn">import</span> <span class="nn">nltk</span>
+    
 <span class="c1"># Stop Word Removal</span>
 <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
-<span class="c1"># Word Tokenization</span>
 <span class="c1"># from nltk.tokenize import word_tokenize</span>
-<span class="c1"># Lemmatization</span>
 <span class="kn">from</span> <span class="nn">nltk.stem</span> <span class="kn">import</span> <span class="n">WordNetLemmatizer</span>
 <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">wordnet</span>
 </pre></div>
@@ -13336,7 +13333,7 @@ div#notebook {
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'./job_descriptions.csv'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="s1">'infer'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'./golden_training_hcs_15_18_19.csv'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="s1">'infer'</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
@@ -13355,30 +13352,21 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
-RangeIndex: 127784 entries, 0 to 127783
-Data columns (total 8 columns):
-req_guid                  127784 non-null object
-original_hcs_code         127784 non-null object
-original_hcs_level        127784 non-null object
-updated_assigned_hcs      127784 non-null object
-updated_assigned_level    127784 non-null int64
-level_indicator           127784 non-null int64
-job_title                 127783 non-null object
-job_description           127784 non-null object
-dtypes: int64(2), object(6)
-memory usage: 7.8+ MB
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/usr/local/lib/python3.6/dist-packages/IPython/core/interactiveshell.py:3051: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
-  interactivity=interactivity, compiler=compiler, result=result)
+RangeIndex: 127893 entries, 0 to 127892
+Data columns (total 9 columns):
+ #   Column                  Non-Null Count   Dtype  
+---  ------                  --------------   -----  
+ 0   req_guid                127893 non-null  object 
+ 1   original_hcs_code       127893 non-null  object 
+ 2   original_hcs_level      125881 non-null  object 
+ 3   bill_rate               125881 non-null  float64
+ 4   updated_assigned_hcs    127893 non-null  object 
+ 5   updated_assigned_level  127893 non-null  int64  
+ 6   level_indicator         127893 non-null  int64  
+ 7   job_title               127892 non-null  object 
+ 8   job_description         127893 non-null  object 
+dtypes: float64(1), int64(2), object(6)
+memory usage: 8.8+ MB
 </pre>
 </div>
 </div>
@@ -13409,7 +13397,7 @@ memory usage: 7.8+ MB
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The total amount of training data on job descriptions is:  127784
+<pre>The total amount of training data on job descriptions is:  127893
 </pre>
 </div>
 </div>
@@ -13430,11 +13418,231 @@ memory usage: 7.8+ MB
 <div class="prompt input_prompt">In [8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># remove any rows without job_description</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># remove any rows without job_description and this may change the index order</span>
 <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># need to reset the index since the index will be used to concat the tables</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># check if index is reset</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[8]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>req_guid</th>
+      <th>original_hcs_code</th>
+      <th>original_hcs_level</th>
+      <th>bill_rate</th>
+      <th>updated_assigned_hcs</th>
+      <th>updated_assigned_level</th>
+      <th>level_indicator</th>
+      <th>job_title</th>
+      <th>job_description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>15787350</td>
+      <td>17-400</td>
+      <td>Intermediate Level</td>
+      <td>29.00</td>
+      <td>00-000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Architect Intern</td>
+      <td>Collaborate directly with a Senior Project Des...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>15308082</td>
+      <td>51-300</td>
+      <td>Intermediate Level</td>
+      <td>37.18</td>
+      <td>00-000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>CNC Programmer</td>
+      <td>Look at a production requirement list and put ...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>15397530</td>
+      <td>51-300</td>
+      <td>Intermediate Level</td>
+      <td>25.70</td>
+      <td>00-000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Quality Inspector</td>
+      <td>MUST HAVES At least 3 years of experience read...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>15640870</td>
+      <td>29-110</td>
+      <td>Entry Level</td>
+      <td>25.15</td>
+      <td>00-000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Production Support Technician</td>
+      <td>Must Haves 1 years of working in a procedural ...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>15484982</td>
+      <td>43-310</td>
+      <td>Expert Level</td>
+      <td>24.00</td>
+      <td>00-000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Admin Assistant</td>
+      <td>MAF is looking for a senior level Administrati...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[8]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>req_guid</th>
+      <th>original_hcs_code</th>
+      <th>original_hcs_level</th>
+      <th>bill_rate</th>
+      <th>updated_assigned_hcs</th>
+      <th>updated_assigned_level</th>
+      <th>level_indicator</th>
+      <th>job_title</th>
+      <th>job_description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>125875</th>
+      <td>14964573</td>
+      <td>15-100</td>
+      <td>Intermediate Level</td>
+      <td>67.00</td>
+      <td>15-100</td>
+      <td>2</td>
+      <td>3</td>
+      <td>Mid Level Java Developer</td>
+      <td>THIS IS A DIRECT PLACEMENT POSITION THAT WOULD...</td>
+    </tr>
+    <tr>
+      <th>125876</th>
+      <td>15062959</td>
+      <td>15-350</td>
+      <td>Intermediate Level</td>
+      <td>85.00</td>
+      <td>15-350</td>
+      <td>2</td>
+      <td>3</td>
+      <td>VMware Systems Administrator</td>
+      <td>Responsibilities We are looking for a candidat...</td>
+    </tr>
+    <tr>
+      <th>125877</th>
+      <td>15843565</td>
+      <td>13-900</td>
+      <td>Entry Level</td>
+      <td>28.98</td>
+      <td>00-000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Billing Assistant</td>
+      <td>Analyze and interpret contracts to determine p...</td>
+    </tr>
+    <tr>
+      <th>125878</th>
+      <td>15659932</td>
+      <td>51-140</td>
+      <td>Entry Level</td>
+      <td>21.90</td>
+      <td>00-000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Clean Room Technican</td>
+      <td>Candidates will be using hand tools to assembl...</td>
+    </tr>
+    <tr>
+      <th>125879</th>
+      <td>15208754</td>
+      <td>51-310</td>
+      <td>Expert Level</td>
+      <td>28.80</td>
+      <td>00-000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Welder II</td>
+      <td>Perform welding duties using a wire welder We...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13474,6 +13682,7 @@ memory usage: 7.8+ MB
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13491,14 +13700,16 @@ memory usage: 7.8+ MB
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
-Int64Index: 127783 entries, 0 to 127783
+RangeIndex: 125880 entries, 0 to 125879
 Data columns (total 4 columns):
-req_guid                127783 non-null object
-updated_assigned_hcs    127783 non-null object
-job_title               127783 non-null object
-job_description         127783 non-null object
+ #   Column                Non-Null Count   Dtype 
+---  ------                --------------   ----- 
+ 0   req_guid              125880 non-null  object
+ 1   updated_assigned_hcs  125880 non-null  object
+ 2   job_title             125880 non-null  object
+ 3   job_description       125880 non-null  object
 dtypes: object(4)
-memory usage: 4.9+ MB
+memory usage: 3.8+ MB
 </pre>
 </div>
 </div>
@@ -13537,38 +13748,112 @@ memory usage: 4.9+ MB
   <tbody>
     <tr>
       <th>0</th>
-      <td>15795912</td>
+      <td>15787350</td>
       <td>00-000</td>
-      <td>Warehouse Material Handler 1st Shift TEMP 6 mo</td>
-      <td>Warehouse Material Handler 1st Shift TEMP 6 mo...</td>
+      <td>Architect Intern</td>
+      <td>Architect Intern Collaborate directly with a S...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>15370412</td>
+      <td>15308082</td>
       <td>00-000</td>
-      <td>Structural Welder</td>
-      <td>Structural Welder Welding structural steel wit...</td>
+      <td>CNC Programmer</td>
+      <td>CNC Programmer Look at a production requiremen...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>15735158</td>
+      <td>15397530</td>
       <td>00-000</td>
-      <td>Construction Laborer</td>
-      <td>Construction Laborer This individual will be r...</td>
+      <td>Quality Inspector</td>
+      <td>Quality Inspector MUST HAVES At least 3 years ...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>15797256</td>
+      <td>15640870</td>
       <td>00-000</td>
-      <td>Wrapping</td>
-      <td>Wrapping Must Have Ability to lift 50lbs palle...</td>
+      <td>Production Support Technician</td>
+      <td>Production Support Technician Must Haves 1 yea...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>15469997</td>
+      <td>15484982</td>
       <td>00-000</td>
-      <td>Operations Representative</td>
-      <td>Operations Representative Executes the busines...</td>
+      <td>Admin Assistant</td>
+      <td>Admin Assistant MAF is looking for a senior le...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[11]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>req_guid</th>
+      <th>updated_assigned_hcs</th>
+      <th>job_title</th>
+      <th>job_description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>125875</th>
+      <td>14964573</td>
+      <td>15-100</td>
+      <td>Mid Level Java Developer</td>
+      <td>Mid Level Java Developer THIS IS A DIRECT PLAC...</td>
+    </tr>
+    <tr>
+      <th>125876</th>
+      <td>15062959</td>
+      <td>15-350</td>
+      <td>VMware Systems Administrator</td>
+      <td>VMware Systems Administrator Responsibilities ...</td>
+    </tr>
+    <tr>
+      <th>125877</th>
+      <td>15843565</td>
+      <td>00-000</td>
+      <td>Billing Assistant</td>
+      <td>Billing Assistant Analyze and interpret contra...</td>
+    </tr>
+    <tr>
+      <th>125878</th>
+      <td>15659932</td>
+      <td>00-000</td>
+      <td>Clean Room Technican</td>
+      <td>Clean Room Technican Candidates will be using ...</td>
+    </tr>
+    <tr>
+      <th>125879</th>
+      <td>15208754</td>
+      <td>00-000</td>
+      <td>Welder II</td>
+      <td>Welder II   Perform welding duties using a wir...</td>
     </tr>
   </tbody>
 </table>
@@ -13603,16 +13888,24 @@ memory usage: 4.9+ MB
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I can use NLTK word_tokenize function to process the job description field (by removing punctuations 
+and separating words) like below</p>
+<div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">'job_description'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">job_description</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+<p>Or I can just use python string split function to separate text since the job description has been cleaned as below.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In [12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Tokenize the job description and title</span>
-<span class="c1"># I can use NLTK word_tokenize function to process the job description field (by removing punctuations </span>
-<span class="c1"># and separating words) like below</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">'job_description'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">job_description</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="c1"># Or I can just use python string split function to separate text since the job description has been cleaned</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">'job_description'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"job_description"</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">'job_description'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"job_description"</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">" "</span><span class="p">)</span>
 </pre></div>
@@ -13672,38 +13965,38 @@ memory usage: 4.9+ MB
   <tbody>
     <tr>
       <th>0</th>
-      <td>15795912</td>
+      <td>15787350</td>
       <td>00-000</td>
-      <td>Warehouse Material Handler 1st Shift TEMP 6 mo</td>
-      <td>[warehouse, material, handler, 1st, shift, tem...</td>
+      <td>Architect Intern</td>
+      <td>[architect, intern, collaborate, directly, wit...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>15370412</td>
+      <td>15308082</td>
       <td>00-000</td>
-      <td>Structural Welder</td>
-      <td>[structural, welder, welding, structural, stee...</td>
+      <td>CNC Programmer</td>
+      <td>[cnc, programmer, look, at, a, production, req...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>15735158</td>
+      <td>15397530</td>
       <td>00-000</td>
-      <td>Construction Laborer</td>
-      <td>[construction, laborer, this, individual, will...</td>
+      <td>Quality Inspector</td>
+      <td>[quality, inspector, must, haves, at, least, 3...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>15797256</td>
+      <td>15640870</td>
       <td>00-000</td>
-      <td>Wrapping</td>
-      <td>[wrapping, must, have, ability, to, lift, 50lb...</td>
+      <td>Production Support Technician</td>
+      <td>[production, support, technician, must, haves,...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>15469997</td>
+      <td>15484982</td>
       <td>00-000</td>
-      <td>Operations Representative</td>
-      <td>[operations, representative, executes, the, bu...</td>
+      <td>Admin Assistant</td>
+      <td>[admin, assistant, maf, is, looking, for, a, s...</td>
     </tr>
   </tbody>
 </table>
@@ -13782,38 +14075,38 @@ memory usage: 4.9+ MB
   <tbody>
     <tr>
       <th>0</th>
-      <td>15795912</td>
+      <td>15787350</td>
       <td>00-000</td>
-      <td>Warehouse Material Handler 1st Shift TEMP 6 mo</td>
-      <td>[warehouse, material, handler, 1st, shift, tem...</td>
+      <td>Architect Intern</td>
+      <td>[architect, intern, collaborate, directly, sen...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>15370412</td>
+      <td>15308082</td>
       <td>00-000</td>
-      <td>Structural Welder</td>
-      <td>[structural, welder, welding, structural, stee...</td>
+      <td>CNC Programmer</td>
+      <td>[cnc, programmer, look, production, requiremen...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>15735158</td>
+      <td>15397530</td>
       <td>00-000</td>
-      <td>Construction Laborer</td>
-      <td>[construction, laborer, individual, responsibl...</td>
+      <td>Quality Inspector</td>
+      <td>[quality, inspector, must, haves, least, 3, ye...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>15797256</td>
+      <td>15640870</td>
       <td>00-000</td>
-      <td>Wrapping</td>
-      <td>[wrapping, must, ability, lift, 50lbs, palleti...</td>
+      <td>Production Support Technician</td>
+      <td>[production, support, technician, must, haves,...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>15469997</td>
+      <td>15484982</td>
       <td>00-000</td>
-      <td>Operations Representative</td>
-      <td>[operations, representative, executes, busines...</td>
+      <td>Admin Assistant</td>
+      <td>[admin, assistant, maf, looking, senior, level...</td>
     </tr>
   </tbody>
 </table>
@@ -13891,38 +14184,38 @@ memory usage: 4.9+ MB
   <tbody>
     <tr>
       <th>0</th>
-      <td>15795912</td>
+      <td>15787350</td>
       <td>00-000</td>
-      <td>Warehouse Material Handler 1st Shift TEMP 6 mo</td>
-      <td>[warehouse, material, handler, 1st, shift, tem...</td>
+      <td>Architect Intern</td>
+      <td>[architect, intern, collaborate, directly, sen...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>15370412</td>
+      <td>15308082</td>
       <td>00-000</td>
-      <td>Structural Welder</td>
-      <td>[structural, welder, weld, structural, steel, ...</td>
+      <td>CNC Programmer</td>
+      <td>[cnc, programmer, look, production, requiremen...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>15735158</td>
+      <td>15397530</td>
       <td>00-000</td>
-      <td>Construction Laborer</td>
-      <td>[construction, laborer, individual, responsibl...</td>
+      <td>Quality Inspector</td>
+      <td>[quality, inspector, must, have, least, 3, yea...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>15797256</td>
+      <td>15640870</td>
       <td>00-000</td>
-      <td>Wrapping</td>
-      <td>[wrap, must, ability, lift, 50lbs, palletizing...</td>
+      <td>Production Support Technician</td>
+      <td>[production, support, technician, must, have, ...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>15469997</td>
+      <td>15484982</td>
       <td>00-000</td>
-      <td>Operations Representative</td>
-      <td>[operations, representative, execute, business...</td>
+      <td>Admin Assistant</td>
+      <td>[admin, assistant, maf, look, senior, level, a...</td>
     </tr>
   </tbody>
 </table>
@@ -13947,15 +14240,9 @@ memory usage: 4.9+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Word2Vec-Vectorization">Word2Vec Vectorization<a class="anchor-link" href="#Word2Vec-Vectorization">¶</a></h3><p>Gensim Word2Vec will generate a vector (dimension of 100 here) for each word after training based on all job descriptions. So, I will define a function to get average (mean) vectors for a job description.</p>
+<h3 id="Word2Vec-Mean-Vector">Word2Vec Mean Vector<a class="anchor-link" href="#Word2Vec-Mean-Vector">¶</a></h3><p>Gensim Word2Vec will generate a vector (dimension of 300 here) for each word after training based on all job descriptions. So, I will define a function to get average (mean) vectors for a job description.</p>
+<p>In this project, I will use the pre-train word2vec model which pre-trained on 2.5 million job descriptions.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Gensim-Word2Vec-Model">Gensim Word2Vec Model<a class="anchor-link" href="#Gensim-Word2Vec-Model">¶</a></h4>
 </div>
 </div>
 </div>
@@ -13964,31 +14251,9 @@ memory usage: 4.9+ MB
 <div class="prompt input_prompt">In [16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Prepare all the text input for training word2vec model</span>
-<span class="n">sentences</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'job_description'</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define and train a word2vec model. </span>
-<span class="c1"># Here I set vector dimension size to be 100, window (word distanse) to be 5 </span>
-<span class="c1"># and use all available CPUs for parallel processing</span>
-<span class="n">model_w2v</span> <span class="o">=</span> <span class="n">Word2Vec</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">min_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">workers</span><span class="o">=</span><span class="n">cpu_count</span><span class="p">)</span>
-<span class="c1"># summarize vocabulary</span>
-<span class="c1"># word_vocabulary = list(model_w2v.wv.vocab)</span>
-<span class="c1"># print(word_vocabulary)</span>
-<span class="c1"># save model with binary format</span>
-<span class="n">model_w2v</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'nnc_word2vec.pkl'</span><span class="p">)</span>
-<span class="c1"># load model when needed so that this word2vec model doesn't need to be re-trained</span>
-<span class="c1"># model_w2v = Word2Vec.load('nnc_word2vec.pkl')</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load the pre-trained model</span>
+<span class="n">word2vec_path</span> <span class="o">=</span> <span class="s1">'../../Word2Vec_Pretrained/nnc_word2vec.bin'</span>
+<span class="n">model_w2v</span> <span class="o">=</span> <span class="n">Word2Vec</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">word2vec_path</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">model_w2v</span><span class="p">)</span>
 </pre></div>
 
@@ -14006,7 +14271,7 @@ memory usage: 4.9+ MB
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Word2Vec(vocab=55287, size=100, alpha=0.025)
+<pre>Word2Vec(vocab=381161, size=300, alpha=0.025)
 </pre>
 </div>
 </div>
@@ -14017,15 +14282,15 @@ memory usage: 4.9+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [18]:</div>
+<div class="prompt input_prompt">In [17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define a function to get average (mean) vectors for a job description based on trained word2vec model</span>
-<span class="k">def</span> <span class="nf">get_mean_vectors</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">model</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">get_mean_vectors</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
     <span class="c1"># remove out of vocabulary words</span>
-    <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">vocab</span><span class="p">]</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">model_w2v</span><span class="o">.</span><span class="n">wv</span><span class="o">.</span><span class="n">vocab</span><span class="p">]</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="n">words</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">model_w2v</span><span class="p">[</span><span class="n">words</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="p">[]</span>
 </pre></div>
@@ -14037,11 +14302,11 @@ memory usage: 4.9+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [19]:</div>
+<div class="prompt input_prompt">In [18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Apply the function to generate 100 dimension vectors for each job description in the data set</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">'job_description_vectors'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">get_mean_vectors</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">job_description</span><span class="p">,</span> <span class="n">model_w2v</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Apply the function to generate 300 dimension vectors for each job description in the data set</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'job_description_vectors'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">get_mean_vectors</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">job_description</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
 <span class="c1"># Show some sample results</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -14068,7 +14333,7 @@ memory usage: 4.9+ MB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -14101,43 +14366,43 @@ memory usage: 4.9+ MB
   <tbody>
     <tr>
       <th>0</th>
-      <td>15795912</td>
+      <td>15787350</td>
       <td>00-000</td>
-      <td>Warehouse Material Handler 1st Shift TEMP 6 mo</td>
-      <td>[warehouse, material, handler, 1st, shift, tem...</td>
-      <td>[0.067955986, -0.052602034, 0.108059414, -0.27...</td>
+      <td>Architect Intern</td>
+      <td>[architect, intern, collaborate, directly, sen...</td>
+      <td>[-0.08636093, -0.29485992, -0.6998215, 0.10251...</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>15370412</td>
+      <td>15308082</td>
       <td>00-000</td>
-      <td>Structural Welder</td>
-      <td>[structural, welder, weld, structural, steel, ...</td>
-      <td>[1.5541024, -1.2365535, -0.10899881, 1.2434216...</td>
+      <td>CNC Programmer</td>
+      <td>[cnc, programmer, look, production, requiremen...</td>
+      <td>[-0.17358255, 1.2789137, -1.2000684, 0.5644371...</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>15735158</td>
+      <td>15397530</td>
       <td>00-000</td>
-      <td>Construction Laborer</td>
-      <td>[construction, laborer, individual, responsibl...</td>
-      <td>[-0.167428, -0.9671807, 0.015980506, -0.235558...</td>
+      <td>Quality Inspector</td>
+      <td>[quality, inspector, must, have, least, 3, yea...</td>
+      <td>[0.67331797, -0.032487113, 0.4322605, -0.50877...</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>15797256</td>
+      <td>15640870</td>
       <td>00-000</td>
-      <td>Wrapping</td>
-      <td>[wrap, must, ability, lift, 50lbs, palletizing...</td>
-      <td>[-0.2389299, 0.036015894, -0.20679249, -0.1900...</td>
+      <td>Production Support Technician</td>
+      <td>[production, support, technician, must, have, ...</td>
+      <td>[0.12005497, 0.15049955, 0.023888435, 0.623276...</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>15469997</td>
+      <td>15484982</td>
       <td>00-000</td>
-      <td>Operations Representative</td>
-      <td>[operations, representative, execute, business...</td>
-      <td>[0.035469715, -0.04396796, -0.034893647, 0.377...</td>
+      <td>Admin Assistant</td>
+      <td>[admin, assistant, maf, look, senior, level, a...</td>
+      <td>[0.71424484, 0.08379614, -0.23826586, -0.22359...</td>
     </tr>
   </tbody>
 </table>
@@ -14153,7 +14418,30 @@ memory usage: 4.9+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Gensim-Doc2Vec-Model">Gensim Doc2Vec Model<a class="anchor-link" href="#Gensim-Doc2Vec-Model">¶</a></h4><p>Actually, I can use gensim library Doc2Vec function to generate vectors as well.  However, I don't choose this method due to relatively too large files that Doc2Vec function will produce (see the screen shot below). Any interested in the discussion on Word2Vec vs. Doc2Vec, it can be referred to this <a href="https://datascience.stackexchange.com/questions/20076/word2vec-vs-sentence2vec-vs-doc2vec">link</a></p>
+<p>The following codes can be used to train a custom word2vec word embedding model when needed.</p>
+<div class="highlight"><pre><span></span><span class="c1"># Prepare all the text input for training word2vec model</span>
+<span class="n">sentences</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'job_description'</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="c1"># Define and train a word2vec model. </span>
+<span class="c1"># Here I set vector dimension size to be 300, window (word distanse) to be 5 </span>
+<span class="c1"># and use all available CPUs for parallel processing</span>
+<span class="n">model_w2v</span> <span class="o">=</span> <span class="n">Word2Vec</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">min_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">workers</span><span class="o">=</span><span class="n">cpu_count</span><span class="p">)</span>
+<span class="c1"># summarize vocabulary</span>
+<span class="c1"># word_vocabulary = list(model_w2v.wv.vocab)</span>
+<span class="c1"># print(word_vocabulary)</span>
+<span class="c1"># save model with binary format</span>
+<span class="n">model_w2v</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'nnc_word2vec.pkl'</span><span class="p">)</span>
+<span class="c1"># load model when needed so that this word2vec model doesn't need to be re-trained</span>
+<span class="c1"># model_w2v = Word2Vec.load('nnc_word2vec.pkl')</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">model_w2v</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Alternatively, I can use gensim library Doc2Vec to train a Doc2Vec model and then generate vectors as well.  However, I don't choose this method due to 1). relatively too large files that Doc2Vec function will produce (see the screen shot below) and 2). better to be used for documentation simiarlity comparison. Any interested in the discussion on Word2Vec vs. Doc2Vec, it can be refer to this <a href="https://datascience.stackexchange.com/questions/20076/word2vec-vs-sentence2vec-vs-doc2vec">link</a></p>
 
 </div>
 </div>
@@ -14169,117 +14457,36 @@ memory usage: 4.9+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The following codes will show how to do word embedding vectorization with Doc2Vec class.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Prepare tagged documents for Doc2Vec model training</span>
+<p>The training Doc2Vec model and generating vectors from it can be seen in the following codes:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Prepare tagged documents for training</span>
 <span class="n">descriptions</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'job_description'</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 <span class="n">tags</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'req_guid'</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 <span class="n">docs</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tags</span><span class="p">)):</span>
     <span class="n">docs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">doc2vec</span><span class="o">.</span><span class="n">TaggedDocument</span><span class="p">(</span><span class="n">words</span><span class="o">=</span><span class="n">descriptions</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">"Train-"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">tags</span><span class="p">[</span><span class="n">i</span><span class="p">])]))</span>
-    
+
 <span class="n">docs</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Setup doc2vec model which is similar to word2vec model setup</span>
+<span class="c1"># # Setup doc2vec model which is similar to word2vec model setup</span>
 <span class="n">model_d2v</span> <span class="o">=</span> <span class="n">doc2vec</span><span class="o">.</span><span class="n">Doc2Vec</span><span class="p">(</span><span class="n">dm</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vector_size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">min_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">workers</span><span class="o">=</span><span class="n">cpu_count</span><span class="p">)</span>
-<span class="c1"># summarize vocabulary</span>
+<span class="c1"># # summarize vocabulary</span>
 <span class="n">model_d2v</span><span class="o">.</span><span class="n">build_vocab</span><span class="p">(</span><span class="n">docs</span><span class="p">)</span>
-<span class="c1"># train model</span>
+<span class="c1"># # train model</span>
 <span class="n">model_d2v</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">docs</span><span class="p">,</span> <span class="n">total_examples</span><span class="o">=</span><span class="n">model_d2v</span><span class="o">.</span><span class="n">corpus_count</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="n">model_d2v</span><span class="o">.</span><span class="n">epochs</span><span class="p">)</span>
-<span class="c1"># save model with binary format</span>
+<span class="c1"># # save model with binary format</span>
 <span class="n">model_d2v</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'doc2vec.pkl'</span><span class="p">)</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load doc2vec model when needed so that the model don't have to be re-trained</span>
+<span class="c1"># # Load doc2vec model when needed so that the model don't have to be re-trained</span>
 <span class="n">model_d2v</span> <span class="o">=</span> <span class="n">doc2vec</span><span class="o">.</span><span class="n">Doc2Vec</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">'doc2vec.pkl'</span><span class="p">)</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [23]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get the job description vectors from the trained doc2vec model by using infer_vector function</span>
+<span class="c1"># # Get the job description vectors from the trained doc2vec model by using infer_vector function</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">'job_description_vectors'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">model_d2v</span><span class="o">.</span><span class="n">infer_vector</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">job_description</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="c1"># or directly retrieve from tagged documents</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">'job_description_vectors'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">model_d2v</span><span class="o">.</span><span class="n">docvecs</span><span class="p">[</span><span class="s2">"Train-"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">req_guid</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<span class="c1"># # or directly retrieve from tagged documents</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'job_description_vectors'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">model_d2v</span><span class="o">.</span><span class="n">docvecs</span><span class="p">[</span><span class="s2">"Train-"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">req_guid</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
-    </div>
 </div>
 </div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Google-Pre-train-Word2Vec-Model">Google Pre-train Word2Vec Model<a class="anchor-link" href="#Google-Pre-train-Word2Vec-Model">¶</a></h4><p>Another way to do word2vec vectorization is to use some pre-trained model. Actually, I downloaded Google’s pre-trained model from <a href="https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing">here</a>. It’s 1.5GB! It includes word vectors for a vocabulary of 3 million words and phrases that they trained on roughly 100 billion words from a Google News dataset. The vector length is 300 features. The detailed introduction of this Google pre-trained word2vec model can be found <a href="https://code.google.com/archive/p/word2vec/">here</a> and <a href="https://mccormickml.com/2016/04/12/googles-pretrained-word2vec-model-in-python/">here</a></p>
-<p>Loading this model using gensim is very easy; I just need to pass in the path to the model file as shown below. And then applying the function of get_mean_vectors() to produce vectors for each job description.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load Google pre-trained model</span>
-<span class="n">model_google</span> <span class="o">=</span> <span class="n">gensim</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Word2Vec</span><span class="o">.</span><span class="n">load_word2vec_format</span><span class="p">(</span><span class="s1">'./GoogleNews-vectors-negative300.bin'</span><span class="p">,</span> <span class="n">binary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Apply get_mean_vector function to get vectors for each job description</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">'job_description_vectors'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">get_mean_vectors</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">job_description</span><span class="p">,</span> <span class="n">model_google</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -14291,14 +14498,27 @@ memory usage: 4.9+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [20]:</div>
+<div class="prompt input_prompt">In [19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Put job description vectors as columns</span>
-<span class="n">series</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'job_description_vectors'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">.</span><span class="n">as_matrix</span><span class="p">()</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">series</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'job_description_vectors'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">w2v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">apply_along_axis</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="n">series</span><span class="p">)</span>
 <span class="n">w2v_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">w2v</span><span class="p">)</span>
 <span class="n">final_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">,</span> <span class="n">w2v_df</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">final_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14311,14 +14531,179 @@ memory usage: 4.9+ MB
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/usr/local/lib/python3.6/dist-packages/ipykernel_launcher.py:2: FutureWarning: Method .as_matrix will be removed in a future version. Use .values instead.
-  
-</pre>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>req_guid</th>
+      <th>updated_assigned_hcs</th>
+      <th>job_title</th>
+      <th>job_description</th>
+      <th>job_description_vectors</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>...</th>
+      <th>290</th>
+      <th>291</th>
+      <th>292</th>
+      <th>293</th>
+      <th>294</th>
+      <th>295</th>
+      <th>296</th>
+      <th>297</th>
+      <th>298</th>
+      <th>299</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>15787350</td>
+      <td>00-000</td>
+      <td>Architect Intern</td>
+      <td>[architect, intern, collaborate, directly, sen...</td>
+      <td>[-0.08636093, -0.29485992, -0.6998215, 0.10251...</td>
+      <td>-0.086361</td>
+      <td>-0.294860</td>
+      <td>-0.699821</td>
+      <td>0.102510</td>
+      <td>-0.081705</td>
+      <td>...</td>
+      <td>0.342909</td>
+      <td>-0.746965</td>
+      <td>0.324627</td>
+      <td>-0.347712</td>
+      <td>0.166916</td>
+      <td>0.406738</td>
+      <td>-0.799520</td>
+      <td>0.077131</td>
+      <td>0.359275</td>
+      <td>0.287279</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>15308082</td>
+      <td>00-000</td>
+      <td>CNC Programmer</td>
+      <td>[cnc, programmer, look, production, requiremen...</td>
+      <td>[-0.17358255, 1.2789137, -1.2000684, 0.5644371...</td>
+      <td>-0.173583</td>
+      <td>1.278914</td>
+      <td>-1.200068</td>
+      <td>0.564437</td>
+      <td>0.263772</td>
+      <td>...</td>
+      <td>-0.337122</td>
+      <td>0.506212</td>
+      <td>-0.369966</td>
+      <td>-0.994712</td>
+      <td>0.451871</td>
+      <td>0.017072</td>
+      <td>-0.211761</td>
+      <td>-0.362503</td>
+      <td>0.997578</td>
+      <td>0.576597</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>15397530</td>
+      <td>00-000</td>
+      <td>Quality Inspector</td>
+      <td>[quality, inspector, must, have, least, 3, yea...</td>
+      <td>[0.67331797, -0.032487113, 0.4322605, -0.50877...</td>
+      <td>0.673318</td>
+      <td>-0.032487</td>
+      <td>0.432261</td>
+      <td>-0.508771</td>
+      <td>0.476943</td>
+      <td>...</td>
+      <td>-0.135338</td>
+      <td>1.484898</td>
+      <td>-0.376700</td>
+      <td>-0.514329</td>
+      <td>0.851197</td>
+      <td>-0.124478</td>
+      <td>0.088335</td>
+      <td>-0.612183</td>
+      <td>-0.592375</td>
+      <td>0.263966</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>15640870</td>
+      <td>00-000</td>
+      <td>Production Support Technician</td>
+      <td>[production, support, technician, must, have, ...</td>
+      <td>[0.12005497, 0.15049955, 0.023888435, 0.623276...</td>
+      <td>0.120055</td>
+      <td>0.150500</td>
+      <td>0.023888</td>
+      <td>0.623277</td>
+      <td>-0.154826</td>
+      <td>...</td>
+      <td>-0.049732</td>
+      <td>0.486116</td>
+      <td>0.528126</td>
+      <td>0.541076</td>
+      <td>0.179810</td>
+      <td>-0.529596</td>
+      <td>0.055889</td>
+      <td>-0.019389</td>
+      <td>-0.363229</td>
+      <td>0.296873</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>15484982</td>
+      <td>00-000</td>
+      <td>Admin Assistant</td>
+      <td>[admin, assistant, maf, look, senior, level, a...</td>
+      <td>[0.71424484, 0.08379614, -0.23826586, -0.22359...</td>
+      <td>0.714245</td>
+      <td>0.083796</td>
+      <td>-0.238266</td>
+      <td>-0.223597</td>
+      <td>0.355629</td>
+      <td>...</td>
+      <td>0.235431</td>
+      <td>0.755302</td>
+      <td>0.291932</td>
+      <td>0.643426</td>
+      <td>-0.024221</td>
+      <td>0.418336</td>
+      <td>1.028122</td>
+      <td>-1.041257</td>
+      <td>0.196144</td>
+      <td>-1.213655</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 305 columns</p>
 </div>
+</div>
+
 </div>
 
 </div>
@@ -14408,142 +14793,142 @@ memory usage: 4.9+ MB
       <th>7</th>
       <th>8</th>
       <th>...</th>
-      <th>90</th>
-      <th>91</th>
-      <th>92</th>
-      <th>93</th>
-      <th>94</th>
-      <th>95</th>
-      <th>96</th>
-      <th>97</th>
-      <th>98</th>
-      <th>99</th>
+      <th>290</th>
+      <th>291</th>
+      <th>292</th>
+      <th>293</th>
+      <th>294</th>
+      <th>295</th>
+      <th>296</th>
+      <th>297</th>
+      <th>298</th>
+      <th>299</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
       <td>00-000</td>
-      <td>0.067956</td>
-      <td>-0.052602</td>
-      <td>0.108059</td>
-      <td>-0.274452</td>
-      <td>-0.445171</td>
-      <td>0.184035</td>
-      <td>-0.415023</td>
-      <td>-0.282931</td>
-      <td>0.242700</td>
+      <td>-0.086361</td>
+      <td>-0.294860</td>
+      <td>-0.699821</td>
+      <td>0.102510</td>
+      <td>-0.081705</td>
+      <td>0.608750</td>
+      <td>-0.724328</td>
+      <td>-0.128486</td>
+      <td>0.835863</td>
       <td>...</td>
-      <td>0.276811</td>
-      <td>-0.602863</td>
-      <td>0.552518</td>
-      <td>0.552918</td>
-      <td>-0.268735</td>
-      <td>0.196824</td>
-      <td>-0.345696</td>
-      <td>0.906765</td>
-      <td>-0.207538</td>
-      <td>-0.412793</td>
+      <td>0.342909</td>
+      <td>-0.746965</td>
+      <td>0.324627</td>
+      <td>-0.347712</td>
+      <td>0.166916</td>
+      <td>0.406738</td>
+      <td>-0.799520</td>
+      <td>0.077131</td>
+      <td>0.359275</td>
+      <td>0.287279</td>
     </tr>
     <tr>
       <th>1</th>
       <td>00-000</td>
-      <td>1.554102</td>
-      <td>-1.236554</td>
-      <td>-0.108999</td>
-      <td>1.243422</td>
-      <td>-1.273140</td>
-      <td>-0.707512</td>
-      <td>0.086695</td>
-      <td>1.114845</td>
-      <td>0.540642</td>
+      <td>-0.173583</td>
+      <td>1.278914</td>
+      <td>-1.200068</td>
+      <td>0.564437</td>
+      <td>0.263772</td>
+      <td>-0.438466</td>
+      <td>0.271884</td>
+      <td>-0.734823</td>
+      <td>-0.538172</td>
       <td>...</td>
-      <td>-0.784990</td>
-      <td>-0.105541</td>
-      <td>0.763936</td>
-      <td>-1.061563</td>
-      <td>0.216444</td>
-      <td>-0.514710</td>
-      <td>0.317936</td>
-      <td>1.307202</td>
-      <td>-1.117071</td>
-      <td>0.313168</td>
+      <td>-0.337122</td>
+      <td>0.506212</td>
+      <td>-0.369966</td>
+      <td>-0.994712</td>
+      <td>0.451871</td>
+      <td>0.017072</td>
+      <td>-0.211761</td>
+      <td>-0.362503</td>
+      <td>0.997578</td>
+      <td>0.576597</td>
     </tr>
     <tr>
       <th>2</th>
       <td>00-000</td>
-      <td>-0.167428</td>
-      <td>-0.967181</td>
-      <td>0.015981</td>
-      <td>-0.235559</td>
-      <td>-0.347159</td>
-      <td>-0.294594</td>
-      <td>-0.496681</td>
-      <td>0.486209</td>
-      <td>-0.905325</td>
+      <td>0.673318</td>
+      <td>-0.032487</td>
+      <td>0.432261</td>
+      <td>-0.508771</td>
+      <td>0.476943</td>
+      <td>0.291932</td>
+      <td>-0.509735</td>
+      <td>0.862125</td>
+      <td>-0.903905</td>
       <td>...</td>
-      <td>-0.789382</td>
-      <td>-0.309183</td>
-      <td>0.445784</td>
-      <td>0.726108</td>
-      <td>0.158220</td>
-      <td>-0.923460</td>
-      <td>0.015126</td>
-      <td>-0.397063</td>
-      <td>-1.572622</td>
-      <td>0.203792</td>
+      <td>-0.135338</td>
+      <td>1.484898</td>
+      <td>-0.376700</td>
+      <td>-0.514329</td>
+      <td>0.851197</td>
+      <td>-0.124478</td>
+      <td>0.088335</td>
+      <td>-0.612183</td>
+      <td>-0.592375</td>
+      <td>0.263966</td>
     </tr>
     <tr>
       <th>3</th>
       <td>00-000</td>
-      <td>-0.238930</td>
-      <td>0.036016</td>
-      <td>-0.206792</td>
-      <td>-0.190075</td>
-      <td>-1.207528</td>
-      <td>0.260064</td>
-      <td>-0.293271</td>
-      <td>0.376710</td>
-      <td>-0.099776</td>
+      <td>0.120055</td>
+      <td>0.150500</td>
+      <td>0.023888</td>
+      <td>0.623277</td>
+      <td>-0.154826</td>
+      <td>-0.322433</td>
+      <td>-1.134776</td>
+      <td>0.638786</td>
+      <td>-0.339165</td>
       <td>...</td>
-      <td>-0.576839</td>
-      <td>-1.660701</td>
-      <td>0.790664</td>
-      <td>-0.204595</td>
-      <td>-0.127094</td>
-      <td>-1.202703</td>
-      <td>0.254096</td>
-      <td>1.396883</td>
-      <td>0.242860</td>
-      <td>0.493747</td>
+      <td>-0.049732</td>
+      <td>0.486116</td>
+      <td>0.528126</td>
+      <td>0.541076</td>
+      <td>0.179810</td>
+      <td>-0.529596</td>
+      <td>0.055889</td>
+      <td>-0.019389</td>
+      <td>-0.363229</td>
+      <td>0.296873</td>
     </tr>
     <tr>
       <th>4</th>
       <td>00-000</td>
-      <td>0.035470</td>
-      <td>-0.043968</td>
-      <td>-0.034894</td>
-      <td>0.377821</td>
-      <td>-0.157486</td>
-      <td>0.530797</td>
-      <td>-0.689256</td>
-      <td>-1.000499</td>
-      <td>0.215361</td>
+      <td>0.714245</td>
+      <td>0.083796</td>
+      <td>-0.238266</td>
+      <td>-0.223597</td>
+      <td>0.355629</td>
+      <td>0.173768</td>
+      <td>-0.725232</td>
+      <td>0.296629</td>
+      <td>-0.313183</td>
       <td>...</td>
-      <td>0.117709</td>
-      <td>0.898091</td>
-      <td>0.442654</td>
-      <td>0.131698</td>
-      <td>0.141214</td>
-      <td>0.057979</td>
-      <td>0.185774</td>
-      <td>-0.812538</td>
-      <td>0.350675</td>
-      <td>0.269515</td>
+      <td>0.235431</td>
+      <td>0.755302</td>
+      <td>0.291932</td>
+      <td>0.643426</td>
+      <td>-0.024221</td>
+      <td>0.418336</td>
+      <td>1.028122</td>
+      <td>-1.041257</td>
+      <td>0.196144</td>
+      <td>-1.213655</td>
     </tr>
   </tbody>
 </table>
-<p>5 rows × 101 columns</p>
+<p>5 rows × 301 columns</p>
 </div>
 </div>
 
@@ -14556,7 +14941,7 @@ memory usage: 4.9+ MB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Training-and-Testing-Data-Preparation">Training and Testing Data Preparation<a class="anchor-link" href="#Training-and-Testing-Data-Preparation">¶</a></h1>
+<h1 id="Data-Preparation-for-Training-and-Testing">Data Preparation for Training and Testing<a class="anchor-link" href="#Data-Preparation-for-Training-and-Testing">¶</a></h1>
 </div>
 </div>
 </div>
@@ -14602,7 +14987,7 @@ memory usage: 4.9+ MB
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(127782, 100)</pre>
+<pre>(125880, 300)</pre>
 </div>
 
 </div>
@@ -14615,7 +15000,7 @@ memory usage: 4.9+ MB
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(127782,)</pre>
+<pre>(125880,)</pre>
 </div>
 
 </div>
@@ -14658,19 +15043,19 @@ memory usage: 4.9+ MB
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[-0.147318  ,  0.08925455,  0.09173775, ...,  0.8263443 ,
-         0.22614478, -0.7334884 ],
-       [ 3.0366647 , -2.2223854 , -0.5396993 , ...,  1.3645416 ,
-        -1.4959618 ,  0.7712565 ],
-       [-0.65161455, -1.6964407 , -0.17612602, ..., -0.9260334 ,
-        -2.3585    ,  0.5445462 ],
+<pre>array([[ 0.15307766, -1.0897384 , -1.6942576 , ...,  0.3473458 ,
+         0.91302884,  0.58050215],
+       [-0.03016952,  2.9683032 , -2.804353  , ..., -0.5940591 ,
+         2.404998  ,  1.1093311 ],
+       [ 1.7491156 , -0.41319907,  0.81794024, ..., -1.128707  ,
+        -1.3113598 ,  0.5378902 ],
        ...,
-       [ 1.2356126 , -2.3783293 , -0.24089916, ...,  0.2772672 ,
-        -0.22560264,  1.4271886 ],
-       [ 0.23332882,  1.2109891 ,  0.48697844, ..., -0.3224733 ,
-        -0.06261613,  2.0399702 ],
-       [-0.30823442,  1.4374849 , -1.8495783 , ..., -2.1731262 ,
-         2.2189806 , -1.0544403 ]], dtype=float32)</pre>
+       [-0.14342314, -0.18321522, -1.2022563 , ..., -0.05808655,
+         3.3263485 , -0.6350132 ],
+       [ 0.15869135,  0.35835943, -0.33742136, ...,  0.84332585,
+        -1.1395992 ,  1.2240493 ],
+       [ 0.39118102, -0.6659653 , -1.193912  , ...,  0.45354998,
+        -0.08339486,  1.8141719 ]], dtype=float32)</pre>
 </div>
 
 </div>
@@ -14804,8 +15189,8 @@ memory usage: 4.9+ MB
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>102225
-25557
+<pre>100704
+25176
 </pre>
 </div>
 </div>
@@ -14834,21 +15219,25 @@ memory usage: 4.9+ MB
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define a neural netowork multi-class classifier model</span>
-<span class="c1"># Two hidden layers are set to 100 and 85</span>
+<span class="c1"># Two hidden layers are set to 300 and 200</span>
 <span class="c1"># Activation function is set to relu</span>
-<span class="c1"># Solver function is set to adam</span>
-<span class="c1"># Learning rate is set to adaptive, which means it will automatically adjust from initial rate</span>
-<span class="c1"># Early stopping is set to true so that it won't waste time when not much improvement can be achieved</span>
+<span class="c1"># Solver (optimizer) function is set to adam for faster converge and better performance (lbfgs solver/optimizer causes overfitting)</span>
+<span class="c1"># Early_stopping is set to true to prevent overfitting</span>
+<span class="c1"># Learning rate is set to adaptive, which means it will automatically adjust from initial rate during each iteration</span>
 <span class="c1"># Alpha is set to 0.01 so that some degree of overfitting can be prevented</span>
-<span class="c1"># verbose is set to true so that all steps of training can be displayed</span>
+<span class="c1"># Batch_size is set to 128 so that 128 training data instances are used for calculation gradient descent</span>
+<span class="c1"># Random_state is set to 42, consistant with initial setup</span>
+<span class="c1"># Verbose is set to true to display information for all iterations</span>
 <span class="n">est</span> <span class="o">=</span> <span class="n">MLPClassifier</span><span class="p">(</span><span class="n">activation</span><span class="o">=</span><span class="s1">'relu'</span><span class="p">,</span> \
-                    <span class="n">hidden_layer_sizes</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">85</span><span class="p">),</span>\
+                    <span class="n">hidden_layer_sizes</span><span class="o">=</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span>\
                     <span class="n">solver</span><span class="o">=</span><span class="s1">'adam'</span><span class="p">,</span>\
                     <span class="n">learning_rate</span><span class="o">=</span><span class="s1">'adaptive'</span><span class="p">,</span>\
-                    <span class="n">max_iter</span><span class="o">=</span><span class="mi">2000</span><span class="p">,</span>\
-                    <span class="n">learning_rate_init</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span>\
-                    <span class="n">early_stopping</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>\
+                    <span class="n">max_iter</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>\
+                    <span class="n">learning_rate_init</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span>\
+                    <span class="n">batch_size</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span>\
                     <span class="n">tol</span><span class="o">=</span><span class="mf">0.000001</span><span class="p">,</span>\
+                    <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span>\
+                    <span class="n">early_stopping</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>\
                     <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>\
                     <span class="n">alpha</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
 </pre></div>
@@ -14864,7 +15253,7 @@ memory usage: 4.9+ MB
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Training Neural Network MLP-Classifier..."</span><span class="p">)</span>
-<span class="n">nnc</span> <span class="o">=</span> <span class="n">est</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">nnc</span> <span class="o">=</span> <span class="n">est</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">nnc</span><span class="p">)</span>
 </pre></div>
 
@@ -14883,139 +15272,91 @@ memory usage: 4.9+ MB
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Training Neural Network MLP-Classifier...
-Iteration 1, loss = 0.81464265
-Validation score: 0.912826
-Iteration 2, loss = 0.42569925
-Validation score: 0.917051
-Iteration 3, loss = 0.38669795
-Validation score: 0.919634
-Iteration 4, loss = 0.36450521
-Validation score: 0.922529
-Iteration 5, loss = 0.35019385
-Validation score: 0.926051
-Iteration 6, loss = 0.34008885
-Validation score: 0.928398
-Iteration 7, loss = 0.33246543
-Validation score: 0.930902
-Iteration 8, loss = 0.32694455
-Validation score: 0.928946
-Iteration 9, loss = 0.32222512
-Validation score: 0.931137
-Iteration 10, loss = 0.31833392
-Validation score: 0.931450
-Iteration 11, loss = 0.31510674
-Validation score: 0.931998
-Iteration 12, loss = 0.31194218
-Validation score: 0.931920
-Iteration 13, loss = 0.30915078
-Validation score: 0.931763
-Iteration 14, loss = 0.30669303
-Validation score: 0.931841
-Iteration 15, loss = 0.30454031
-Validation score: 0.931685
-Iteration 16, loss = 0.30244810
-Validation score: 0.932780
-Iteration 17, loss = 0.30048881
-Validation score: 0.933328
-Iteration 18, loss = 0.29864367
-Validation score: 0.932937
-Iteration 19, loss = 0.29713906
-Validation score: 0.934580
-Iteration 20, loss = 0.29578552
-Validation score: 0.934737
-Iteration 21, loss = 0.29417779
-Validation score: 0.934815
-Iteration 22, loss = 0.29303792
-Validation score: 0.934267
-Iteration 23, loss = 0.29159450
-Validation score: 0.934815
-Iteration 24, loss = 0.29054444
-Validation score: 0.935128
-Iteration 25, loss = 0.28928409
-Validation score: 0.935206
-Iteration 26, loss = 0.28836118
-Validation score: 0.935989
-Iteration 27, loss = 0.28735696
-Validation score: 0.936302
-Iteration 28, loss = 0.28629365
-Validation score: 0.935754
-Iteration 29, loss = 0.28550795
-Validation score: 0.936458
-Iteration 30, loss = 0.28443055
-Validation score: 0.935441
-Iteration 31, loss = 0.28369189
-Validation score: 0.936223
-Iteration 32, loss = 0.28286233
-Validation score: 0.936223
-Iteration 33, loss = 0.28201090
-Validation score: 0.935989
-Iteration 34, loss = 0.28134604
-Validation score: 0.935519
-Iteration 35, loss = 0.28057694
-Validation score: 0.935676
-Iteration 36, loss = 0.27977264
-Validation score: 0.935128
-Iteration 37, loss = 0.27906473
-Validation score: 0.935910
-Iteration 38, loss = 0.27829080
-Validation score: 0.935206
-Iteration 39, loss = 0.27771099
-Validation score: 0.935597
-Iteration 40, loss = 0.27708383
-Validation score: 0.936615
-Iteration 41, loss = 0.27635315
-Validation score: 0.935910
-Iteration 42, loss = 0.27590810
-Validation score: 0.935050
-Iteration 43, loss = 0.27519121
-Validation score: 0.935206
-Iteration 44, loss = 0.27479944
-Validation score: 0.936928
-Iteration 45, loss = 0.27415946
-Validation score: 0.936771
-Iteration 46, loss = 0.27343152
-Validation score: 0.936145
-Iteration 47, loss = 0.27319290
-Validation score: 0.936223
-Iteration 48, loss = 0.27261845
-Validation score: 0.935910
-Iteration 49, loss = 0.27183607
-Validation score: 0.936615
-Iteration 50, loss = 0.27141678
-Validation score: 0.936067
-Iteration 51, loss = 0.27082863
-Validation score: 0.937006
-Iteration 52, loss = 0.27048725
-Validation score: 0.937397
-Iteration 53, loss = 0.27023376
-Validation score: 0.936458
-Iteration 54, loss = 0.26949459
-Validation score: 0.935832
-Iteration 55, loss = 0.26929600
-Validation score: 0.935676
-Iteration 56, loss = 0.26860782
-Validation score: 0.936771
-Iteration 57, loss = 0.26799008
-Validation score: 0.936928
-Iteration 58, loss = 0.26769125
-Validation score: 0.935128
-Iteration 59, loss = 0.26738703
-Validation score: 0.937084
-Iteration 60, loss = 0.26700033
-Validation score: 0.936693
-Iteration 61, loss = 0.26648259
-Validation score: 0.937006
-Iteration 62, loss = 0.26626237
-Validation score: 0.937163
-Iteration 63, loss = 0.26564696
-Validation score: 0.935989
+Iteration 1, loss = 0.23895872
+Validation score: 0.965247
+Iteration 2, loss = 0.13646807
+Validation score: 0.965942
+Iteration 3, loss = 0.11615888
+Validation score: 0.969814
+Iteration 4, loss = 0.10408511
+Validation score: 0.972098
+Iteration 5, loss = 0.09497245
+Validation score: 0.972098
+Iteration 6, loss = 0.08947659
+Validation score: 0.971204
+Iteration 7, loss = 0.08344035
+Validation score: 0.974084
+Iteration 8, loss = 0.08043861
+Validation score: 0.972694
+Iteration 9, loss = 0.07744376
+Validation score: 0.974680
+Iteration 10, loss = 0.07567926
+Validation score: 0.975573
+Iteration 11, loss = 0.07334694
+Validation score: 0.973985
+Iteration 12, loss = 0.07051221
+Validation score: 0.975871
+Iteration 13, loss = 0.06924813
+Validation score: 0.974978
+Iteration 14, loss = 0.06974275
+Validation score: 0.973091
+Iteration 15, loss = 0.06719382
+Validation score: 0.975375
+Iteration 16, loss = 0.06495366
+Validation score: 0.975871
+Iteration 17, loss = 0.06813549
+Validation score: 0.976169
+Iteration 18, loss = 0.06454030
+Validation score: 0.972495
+Iteration 19, loss = 0.06187835
+Validation score: 0.975971
+Iteration 20, loss = 0.06313603
+Validation score: 0.976666
+Iteration 21, loss = 0.06163290
+Validation score: 0.971304
+Iteration 22, loss = 0.06099257
+Validation score: 0.976864
+Iteration 23, loss = 0.06210684
+Validation score: 0.971204
+Iteration 24, loss = 0.05983280
+Validation score: 0.976666
+Iteration 25, loss = 0.05931625
+Validation score: 0.974183
+Iteration 26, loss = 0.05964439
+Validation score: 0.974878
+Iteration 27, loss = 0.05791724
+Validation score: 0.973985
+Iteration 28, loss = 0.05635361
+Validation score: 0.977758
+Iteration 29, loss = 0.06157399
+Validation score: 0.974878
+Iteration 30, loss = 0.05571369
+Validation score: 0.975474
+Iteration 31, loss = 0.05709855
+Validation score: 0.975573
+Iteration 32, loss = 0.05575122
+Validation score: 0.975673
+Iteration 33, loss = 0.05663162
+Validation score: 0.976070
+Iteration 34, loss = 0.05603433
+Validation score: 0.976964
+Iteration 35, loss = 0.05541284
+Validation score: 0.975871
+Iteration 36, loss = 0.05271885
+Validation score: 0.977361
+Iteration 37, loss = 0.05611389
+Validation score: 0.974878
+Iteration 38, loss = 0.05338500
+Validation score: 0.976964
+Iteration 39, loss = 0.05216936
+Validation score: 0.972595
 Validation score did not improve more than tol=0.000001 for 10 consecutive epochs. Stopping.
-MLPClassifier(activation='relu', alpha=0.01, batch_size='auto', beta_1=0.9,
+MLPClassifier(activation='relu', alpha=0.01, batch_size=128, beta_1=0.9,
               beta_2=0.999, early_stopping=True, epsilon=1e-08,
-              hidden_layer_sizes=(100, 85), learning_rate='adaptive',
-              learning_rate_init=0.0001, max_fun=15000, max_iter=2000,
+              hidden_layer_sizes=(300, 200), learning_rate='adaptive',
+              learning_rate_init=0.001, max_fun=15000, max_iter=500,
               momentum=0.9, n_iter_no_change=10, nesterovs_momentum=True,
-              power_t=0.5, random_state=None, shuffle=True, solver='adam',
+              power_t=0.5, random_state=42, shuffle=True, solver='adam',
               tol=1e-06, validation_fraction=0.1, verbose=True,
               warm_start=False)
 </pre>
@@ -15056,7 +15397,7 @@ MLPClassifier(activation='relu', alpha=0.01, batch_size='auto', beta_1=0.9,
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Accuracy on Training Data are:  0.9395940327708486
+<pre>Accuracy on Training Data are:  0.9932475373371464
 </pre>
 </div>
 </div>
@@ -15071,7 +15412,7 @@ MLPClassifier(activation='relu', alpha=0.01, batch_size='auto', beta_1=0.9,
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check classification accuracy on testing data </span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Accuracy on Training Data are: "</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">nnc</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">),</span> <span class="n">y_test</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Accuracy on Testing Data are: "</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">nnc</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">),</span> <span class="n">y_test</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -15088,7 +15429,7 @@ MLPClassifier(activation='relu', alpha=0.01, batch_size='auto', beta_1=0.9,
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Accuracy on Training Data are:  0.9393903822827405
+<pre>Accuracy on Testing Data are:  0.9766047028916428
 </pre>
 </div>
 </div>
@@ -15102,8 +15443,8 @@ MLPClassifier(activation='relu', alpha=0.01, batch_size='auto', beta_1=0.9,
 <div class="prompt input_prompt">In [35]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check classification (confusion matrix) report on overall data set</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">nnc</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check classification (confusion matrix) report on testing data set</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">nnc</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)))</span>
 </pre></div>
 
     </div>
@@ -15122,36 +15463,50 @@ MLPClassifier(activation='relu', alpha=0.01, batch_size='auto', beta_1=0.9,
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>              precision    recall  f1-score   support
 
-           0       0.96      0.98      0.97    115892
-           1       0.67      0.67      0.67      3332
-           2       0.61      0.29      0.40       102
-           3       0.66      0.40      0.50       677
-           4       0.55      0.50      0.52       563
-           5       0.62      0.22      0.33       238
-           6       0.57      0.30      0.39        87
-           7       0.61      0.51      0.56       424
-           8       0.73      0.45      0.56       353
-           9       0.72      0.55      0.62       477
-          10       0.70      0.63      0.67      1480
-          11       0.75      0.59      0.66       400
-          12       0.00      0.00      0.00        13
-          13       0.00      0.00      0.00        38
-          14       0.62      0.19      0.29       292
-          15       0.71      0.62      0.67       554
-          16       0.64      0.47      0.54       152
-          17       0.00      0.00      0.00        47
-          18       0.58      0.50      0.54       517
-          19       0.68      0.54      0.60       488
-          20       0.00      0.00      0.00        16
-          21       0.00      0.00      0.00        13
-          22       0.71      0.31      0.43        71
-          23       0.71      0.25      0.37       479
-          24       0.71      0.53      0.61      1025
-          25       0.86      0.12      0.20        52
+           0       0.99      0.99      0.99     21509
+           1       0.92      0.94      0.93       605
+           2       1.00      0.40      0.57        25
+           3       0.80      0.88      0.84       152
+           4       0.86      0.63      0.73       125
+           5       0.47      0.62      0.53        34
+           6       0.89      0.85      0.87        20
+           7       0.92      0.91      0.91        96
+           8       0.94      0.89      0.92        74
+           9       0.78      0.95      0.86        88
+          10       0.95      0.95      0.95       286
+          11       0.92      0.89      0.91        82
+          12       0.33      0.50      0.40         2
+          13       0.50      0.50      0.50         6
+          14       0.79      0.67      0.73        55
+          15       0.90      0.80      0.85       111
+          16       0.94      0.71      0.81        42
+          17       1.00      0.50      0.67         8
+          18       0.73      0.88      0.80       112
+          19       0.93      0.86      0.90        96
+          20       1.00      0.75      0.86         4
+          21       0.00      0.00      0.00         4
+          22       1.00      0.89      0.94         9
+          23       0.83      0.62      0.71        84
+          24       0.86      0.91      0.88       204
+          25       1.00      0.56      0.72        16
+          26       0.92      0.93      0.92       619
+          27       1.00      1.00      1.00         7
+          28       0.89      0.65      0.75        37
+          29       0.85      0.76      0.80       103
+          30       1.00      0.86      0.92         7
+          31       0.99      0.97      0.98       230
+          32       0.82      0.82      0.82        17
+          33       0.93      0.95      0.94        44
+          34       1.00      0.67      0.80         3
+          35       0.97      0.83      0.89       214
+          36       1.00      1.00      1.00         3
+          37       1.00      1.00      1.00         3
+          38       0.90      1.00      0.95         9
+          39       0.85      0.94      0.89        31
 
-    accuracy                           0.94    127782
-   macro avg       0.55      0.37      0.43    127782
-weighted avg       0.93      0.94      0.93    127782
+    accuracy                           0.98     25176
+   macro avg       0.86      0.79      0.81     25176
+weighted avg       0.98      0.98      0.98     25176
 
 </pre>
 </div>
@@ -15178,6 +15533,114 @@ weighted avg       0.93      0.94      0.93    127782
 <div class="prompt input_prompt">In [36]:</div>
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Training Neural Network MLP-Classifier on whole data set..."</span><span class="p">)</span>
+<span class="n">nnc</span> <span class="o">=</span> <span class="n">est</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nnc</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Training Neural Network MLP-Classifier on whole data set...
+Iteration 1, loss = 0.22232934
+Validation score: 0.963854
+Iteration 2, loss = 0.13176461
+Validation score: 0.968462
+Iteration 3, loss = 0.11196658
+Validation score: 0.963298
+Iteration 4, loss = 0.10196866
+Validation score: 0.971163
+Iteration 5, loss = 0.09240039
+Validation score: 0.972196
+Iteration 6, loss = 0.08956471
+Validation score: 0.970448
+Iteration 7, loss = 0.08350056
+Validation score: 0.972593
+Iteration 8, loss = 0.07999116
+Validation score: 0.974182
+Iteration 9, loss = 0.07834055
+Validation score: 0.971322
+Iteration 10, loss = 0.07666497
+Validation score: 0.975056
+Iteration 11, loss = 0.07272874
+Validation score: 0.974420
+Iteration 12, loss = 0.07298363
+Validation score: 0.974738
+Iteration 13, loss = 0.07129260
+Validation score: 0.975612
+Iteration 14, loss = 0.06935033
+Validation score: 0.975691
+Iteration 15, loss = 0.06793387
+Validation score: 0.973308
+Iteration 16, loss = 0.06860305
+Validation score: 0.976565
+Iteration 17, loss = 0.06635083
+Validation score: 0.975294
+Iteration 18, loss = 0.06570139
+Validation score: 0.972672
+Iteration 19, loss = 0.06445148
+Validation score: 0.975056
+Iteration 20, loss = 0.06382018
+Validation score: 0.975691
+Iteration 21, loss = 0.06357845
+Validation score: 0.976247
+Iteration 22, loss = 0.06429997
+Validation score: 0.977359
+Iteration 23, loss = 0.06179688
+Validation score: 0.976883
+Iteration 24, loss = 0.06104667
+Validation score: 0.975929
+Iteration 25, loss = 0.06351075
+Validation score: 0.975929
+Iteration 26, loss = 0.05907979
+Validation score: 0.977359
+Iteration 27, loss = 0.05992650
+Validation score: 0.976486
+Iteration 28, loss = 0.05958873
+Validation score: 0.974579
+Iteration 29, loss = 0.05820538
+Validation score: 0.975850
+Iteration 30, loss = 0.05658194
+Validation score: 0.976962
+Iteration 31, loss = 0.05948166
+Validation score: 0.974658
+Iteration 32, loss = 0.05757934
+Validation score: 0.976406
+Iteration 33, loss = 0.05576104
+Validation score: 0.976883
+Validation score did not improve more than tol=0.000001 for 10 consecutive epochs. Stopping.
+MLPClassifier(activation='relu', alpha=0.01, batch_size=128, beta_1=0.9,
+              beta_2=0.999, early_stopping=True, epsilon=1e-08,
+              hidden_layer_sizes=(300, 200), learning_rate='adaptive',
+              learning_rate_init=0.001, max_fun=15000, max_iter=500,
+              momentum=0.9, n_iter_no_change=10, nesterovs_momentum=True,
+              power_t=0.5, random_state=42, shuffle=True, solver='adam',
+              tol=1e-06, validation_fraction=0.1, verbose=True,
+              warm_start=False)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Save the model into a file so that it can be used later on without re-training the model</span>
 <span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">nnc</span><span class="p">,</span> <span class="s1">'./nnc.pkl'</span><span class="p">)</span>
 </pre></div>
@@ -15192,7 +15655,7 @@ weighted avg       0.93      0.94      0.93    127782
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -15209,7 +15672,7 @@ weighted avg       0.93      0.94      0.93    127782
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [37]:</div>
+<div class="prompt input_prompt">In [38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load the classification model</span>
@@ -15233,7 +15696,7 @@ weighted avg       0.93      0.94      0.93    127782
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Accuracy on Testing Data are:  0.9393903822827405
+<pre>Accuracy on Testing Data are:  0.992333968859231
 </pre>
 </div>
 </div>

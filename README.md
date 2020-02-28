@@ -7,7 +7,7 @@ Some interesting data science projects I have done were listed in this repo for 
 * [Time Series Analytics - Traditional Approach](./Time_Series_Forecasting) A traditional solution with Python and Facebook Prophet libraries to do time series forecasting.
 * [Natural Language Processing (NLP) Comparison - Spark Implementaion](./NLP_Analysis_Spark/) A comparison study on NLP solutions with Spark implementation.
 * [Natural Language Processing (NLP) - Neural Network Approach with Sciki-learn & Gensim](./NLP_Analysis_NNC) A solution to do NLP classification with Pandas, Sciki-learn and Gensim. 
-* [Natural Lanauage Processing (NLP) - Neural Network Approach with Tensflow (Coming soon...)](./NLP_Analysis_Tensorflow) A solution to do NLP classification with Tensorflow and Kares. 
+* [Natural Lanauage Processing (NLP) - Neural Network Approach with Tensflow](./NLP_Analysis_Tensorflow/Level_NoSpark.ipynb) A solution to do NLP classification with Tensorflow and Kares. 
 
 # Recommended Environmental Setup
 In order to implement and test the solutions, the [Environmental Setup](./Environment_Setup.md) includes:

@@ -13370,7 +13370,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [7]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tmp_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'./job_descriptions.csv'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="s1">'infer'</span><span class="p">)</span>
@@ -13378,34 +13378,6 @@ div#notebook {
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
-RangeIndex: 2366 entries, 0 to 2365
-Data columns (total 6 columns):
-req_guid           2366 non-null object
-hcs                2366 non-null object
-level              2366 non-null int64
-bill_rate          2206 non-null float64
-job_title          2366 non-null object
-job_description    2366 non-null object
-dtypes: float64(1), int64(1), object(4)
-memory usage: 111.0+ KB
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13419,7 +13391,7 @@ memory usage: 111.0+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [8]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># remove any rows without job_description and this may change the index order</span>
@@ -13433,206 +13405,6 @@ memory usage: 111.0+ KB
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
-RangeIndex: 2206 entries, 0 to 2205
-Data columns (total 6 columns):
-req_guid           2206 non-null object
-hcs                2206 non-null object
-level              2206 non-null int64
-bill_rate          2206 non-null float64
-job_title          2206 non-null object
-job_description    2206 non-null object
-dtypes: float64(1), int64(1), object(4)
-memory usage: 103.5+ KB
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[8]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>req_guid</th>
-      <th>hcs</th>
-      <th>level</th>
-      <th>bill_rate</th>
-      <th>job_title</th>
-      <th>job_description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>13755900</td>
-      <td>15-310</td>
-      <td>0</td>
-      <td>64.82</td>
-      <td>Systems Test Engineer</td>
-      <td>Company Caterpillar Hiring Manager David Gile ...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>13989037</td>
-      <td>15-140</td>
-      <td>0</td>
-      <td>41.25</td>
-      <td>Associate Software Engineer NTD</td>
-      <td>Nintendo Technology Development is seeking a s...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>13907336</td>
-      <td>15-150</td>
-      <td>3</td>
-      <td>60.04</td>
-      <td>Business Process Analyst Senior</td>
-      <td>Analyzes business and technical processes to f...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>14062831</td>
-      <td>15-140</td>
-      <td>0</td>
-      <td>55.29</td>
-      <td>SW Engineer</td>
-      <td>Software Developer This position is for a soft...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>14053771</td>
-      <td>15-190</td>
-      <td>3</td>
-      <td>53.65</td>
-      <td>Documentation Specialist Technical Writer</td>
-      <td>Currently seeking a documentation specialist t...</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[8]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>req_guid</th>
-      <th>hcs</th>
-      <th>level</th>
-      <th>bill_rate</th>
-      <th>job_title</th>
-      <th>job_description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2201</th>
-      <td>HPJP00089400</td>
-      <td>15-380</td>
-      <td>2</td>
-      <td>95.00</td>
-      <td>US Enterprise Architect 5</td>
-      <td>Utilizes expertise to craft a solution that as...</td>
-    </tr>
-    <tr>
-      <th>2202</th>
-      <td>NSAIJP00007106</td>
-      <td>15-350</td>
-      <td>3</td>
-      <td>103.79</td>
-      <td>SYSTEMS ADMININISTRATOR VI</td>
-      <td>JOB DESCRIPTION Responsible for managing the f...</td>
-    </tr>
-    <tr>
-      <th>2203</th>
-      <td>OGEJP00000307</td>
-      <td>15-380</td>
-      <td>3</td>
-      <td>219.00</td>
-      <td>Solution Architect Expert</td>
-      <td>Job Family Summary Leads IT and business unit ...</td>
-    </tr>
-    <tr>
-      <th>2204</th>
-      <td>QTLSJP00006295</td>
-      <td>15-380</td>
-      <td>1</td>
-      <td>85.00</td>
-      <td>Enterprise Architect 1</td>
-      <td>This position is needed to support the impleme...</td>
-    </tr>
-    <tr>
-      <th>2205</th>
-      <td>TRPR310-1</td>
-      <td>15-350</td>
-      <td>3</td>
-      <td>101.00</td>
-      <td>Systems Administrator V</td>
-      <td>Summary The main function of a Systems Adminis...</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13667,7 +13439,7 @@ memory usage: 103.5+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [11]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tmp_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -13676,193 +13448,6 @@ memory usage: 103.5+ KB
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
-RangeIndex: 2206 entries, 0 to 2205
-Data columns (total 5 columns):
-req_guid           2206 non-null object
-hcs                2206 non-null object
-level              2206 non-null int64
-job_title          2206 non-null object
-job_description    2206 non-null object
-dtypes: int64(1), object(4)
-memory usage: 86.3+ KB
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[11]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>req_guid</th>
-      <th>hcs</th>
-      <th>level</th>
-      <th>job_title</th>
-      <th>job_description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>13755900</td>
-      <td>15-310</td>
-      <td>0</td>
-      <td>Systems Test Engineer</td>
-      <td>Systems Test Engineer Company Caterpillar Hiri...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>13989037</td>
-      <td>15-140</td>
-      <td>0</td>
-      <td>Associate Software Engineer NTD</td>
-      <td>Associate Software Engineer NTD  Nintendo Tech...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>13907336</td>
-      <td>15-150</td>
-      <td>3</td>
-      <td>Business Process Analyst Senior</td>
-      <td>Business Process Analyst Senior Analyzes busin...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>14062831</td>
-      <td>15-140</td>
-      <td>0</td>
-      <td>SW Engineer</td>
-      <td>SW Engineer Software Developer This position i...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>14053771</td>
-      <td>15-190</td>
-      <td>3</td>
-      <td>Documentation Specialist Technical Writer</td>
-      <td>Documentation Specialist Technical Writer  Cur...</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[11]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>req_guid</th>
-      <th>hcs</th>
-      <th>level</th>
-      <th>job_title</th>
-      <th>job_description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2201</th>
-      <td>HPJP00089400</td>
-      <td>15-380</td>
-      <td>2</td>
-      <td>US Enterprise Architect 5</td>
-      <td>US Enterprise Architect 5 Utilizes expertise t...</td>
-    </tr>
-    <tr>
-      <th>2202</th>
-      <td>NSAIJP00007106</td>
-      <td>15-350</td>
-      <td>3</td>
-      <td>SYSTEMS ADMININISTRATOR VI</td>
-      <td>SYSTEMS ADMININISTRATOR VI JOB DESCRIPTION Res...</td>
-    </tr>
-    <tr>
-      <th>2203</th>
-      <td>OGEJP00000307</td>
-      <td>15-380</td>
-      <td>3</td>
-      <td>Solution Architect Expert</td>
-      <td>Solution Architect Expert Job Family Summary L...</td>
-    </tr>
-    <tr>
-      <th>2204</th>
-      <td>QTLSJP00006295</td>
-      <td>15-380</td>
-      <td>1</td>
-      <td>Enterprise Architect 1</td>
-      <td>Enterprise Architect 1 This position is needed...</td>
-    </tr>
-    <tr>
-      <th>2205</th>
-      <td>TRPR310-1</td>
-      <td>15-350</td>
-      <td>3</td>
-      <td>Systems Administrator V</td>
-      <td>Systems Administrator V Summary The main funct...</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13933,100 +13518,13 @@ and separating words) like below</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [14]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[14]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>req_guid</th>
-      <th>hcs</th>
-      <th>level</th>
-      <th>job_title</th>
-      <th>job_description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>13755900</td>
-      <td>15-310</td>
-      <td>0</td>
-      <td>Systems Test Engineer</td>
-      <td>[systems, test, engineer, company, caterpillar...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>13989037</td>
-      <td>15-140</td>
-      <td>0</td>
-      <td>Associate Software Engineer NTD</td>
-      <td>[associate, software, engineer, ntd, , nintend...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>13907336</td>
-      <td>15-150</td>
-      <td>3</td>
-      <td>Business Process Analyst Senior</td>
-      <td>[business, process, analyst, senior, analyzes,...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>14062831</td>
-      <td>15-140</td>
-      <td>0</td>
-      <td>SW Engineer</td>
-      <td>[sw, engineer, software, developer, this, posi...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>14053771</td>
-      <td>15-190</td>
-      <td>3</td>
-      <td>Documentation Specialist Technical Writer</td>
-      <td>[documentation, specialist, technical, writer,...</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -14041,7 +13539,7 @@ and separating words) like below</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [15]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get stopwords list from NLTK library</span>
@@ -14059,93 +13557,6 @@ and separating words) like below</p>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[15]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>req_guid</th>
-      <th>hcs</th>
-      <th>level</th>
-      <th>job_title</th>
-      <th>job_description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>13755900</td>
-      <td>15-310</td>
-      <td>0</td>
-      <td>Systems Test Engineer</td>
-      <td>[systems, test, engineer, company, caterpillar...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>13989037</td>
-      <td>15-140</td>
-      <td>0</td>
-      <td>Associate Software Engineer NTD</td>
-      <td>[associate, software, engineer, ntd, nintendo,...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>13907336</td>
-      <td>15-150</td>
-      <td>3</td>
-      <td>Business Process Analyst Senior</td>
-      <td>[business, process, analyst, senior, analyzes,...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>14062831</td>
-      <td>15-140</td>
-      <td>0</td>
-      <td>SW Engineer</td>
-      <td>[sw, engineer, software, developer, position, ...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>14053771</td>
-      <td>15-190</td>
-      <td>3</td>
-      <td>Documentation Specialist Technical Writer</td>
-      <td>[documentation, specialist, technical, writer,...</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -14157,7 +13568,7 @@ and separating words) like below</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [16]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define lemmatization function by using NLTK WordNetLemmatizer function</span>
@@ -14171,93 +13582,6 @@ and separating words) like below</p>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[16]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>req_guid</th>
-      <th>hcs</th>
-      <th>level</th>
-      <th>job_title</th>
-      <th>job_description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>13755900</td>
-      <td>15-310</td>
-      <td>0</td>
-      <td>Systems Test Engineer</td>
-      <td>[systems, test, engineer, company, caterpillar...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>13989037</td>
-      <td>15-140</td>
-      <td>0</td>
-      <td>Associate Software Engineer NTD</td>
-      <td>[associate, software, engineer, ntd, nintendo,...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>13907336</td>
-      <td>15-150</td>
-      <td>3</td>
-      <td>Business Process Analyst Senior</td>
-      <td>[business, process, analyst, senior, analyze, ...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>14062831</td>
-      <td>15-140</td>
-      <td>0</td>
-      <td>SW Engineer</td>
-      <td>[sw, engineer, software, developer, position, ...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>14053771</td>
-      <td>15-190</td>
-      <td>3</td>
-      <td>Documentation Specialist Technical Writer</td>
-      <td>[documentation, specialist, technical, writer,...</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -14336,7 +13660,7 @@ and separating words) like below</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [19]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Apply the function to generate 300 dimension vectors for each job description in the data set</span>
@@ -14346,111 +13670,6 @@ and separating words) like below</p>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Users\ychen\AppData\Local\Continuum\anaconda3\envs\tf-gpu\lib\site-packages\ipykernel_launcher.py:6: DeprecationWarning: Call to deprecated `__getitem__` (Method will be removed in 4.0.0, use self.wv.__getitem__() instead).
-  
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[19]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>req_guid</th>
-      <th>hcs</th>
-      <th>level</th>
-      <th>job_title</th>
-      <th>job_description</th>
-      <th>job_description_vectors</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>13755900</td>
-      <td>15-310</td>
-      <td>0</td>
-      <td>Systems Test Engineer</td>
-      <td>[systems, test, engineer, company, caterpillar...</td>
-      <td>[-0.5244806, 0.23541087, -0.13266999, -0.02033...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>13989037</td>
-      <td>15-140</td>
-      <td>0</td>
-      <td>Associate Software Engineer NTD</td>
-      <td>[associate, software, engineer, ntd, nintendo,...</td>
-      <td>[0.5984878, 0.049582973, -0.32737687, 0.282882...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>13907336</td>
-      <td>15-150</td>
-      <td>3</td>
-      <td>Business Process Analyst Senior</td>
-      <td>[business, process, analyst, senior, analyze, ...</td>
-      <td>[-0.08750353, -0.43753654, -0.30780193, 0.1105...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>14062831</td>
-      <td>15-140</td>
-      <td>0</td>
-      <td>SW Engineer</td>
-      <td>[sw, engineer, software, developer, position, ...</td>
-      <td>[-0.14014928, 0.50968575, -0.74976355, 0.10749...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>14053771</td>
-      <td>15-190</td>
-      <td>3</td>
-      <td>Documentation Specialist Technical Writer</td>
-      <td>[documentation, specialist, technical, writer,...</td>
-      <td>[-0.4147573, 0.21373847, -0.14615062, 0.378821...</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -16205,7 +15424,7 @@ weighted avg       0.97      0.97      0.97      1764
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [41]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Concatenate two data sets into one</span>
@@ -16214,123 +15433,6 @@ weighted avg       0.97      0.97      0.97      1764
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[41]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>req_guid</th>
-      <th>hcs</th>
-      <th>level</th>
-      <th>job_title</th>
-      <th>job_description</th>
-      <th>job_description_vectors</th>
-      <th>level_0</th>
-      <th>level_1</th>
-      <th>level_2</th>
-      <th>level_3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>13755900</td>
-      <td>15-310</td>
-      <td>0</td>
-      <td>Systems Test Engineer</td>
-      <td>[systems, test, engineer, company, caterpillar...</td>
-      <td>[-0.5244806, 0.23541087, -0.13266999, -0.02033...</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>13989037</td>
-      <td>15-140</td>
-      <td>0</td>
-      <td>Associate Software Engineer NTD</td>
-      <td>[associate, software, engineer, ntd, nintendo,...</td>
-      <td>[0.5984878, 0.049582973, -0.32737687, 0.282882...</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>13907336</td>
-      <td>15-150</td>
-      <td>3</td>
-      <td>Business Process Analyst Senior</td>
-      <td>[business, process, analyst, senior, analyze, ...</td>
-      <td>[-0.08750353, -0.43753654, -0.30780193, 0.1105...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>14062831</td>
-      <td>15-140</td>
-      <td>0</td>
-      <td>SW Engineer</td>
-      <td>[sw, engineer, software, developer, position, ...</td>
-      <td>[-0.14014928, 0.50968575, -0.74976355, 0.10749...</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>14053771</td>
-      <td>15-190</td>
-      <td>3</td>
-      <td>Documentation Specialist Technical Writer</td>
-      <td>[documentation, specialist, technical, writer,...</td>
-      <td>[-0.4147573, 0.21373847, -0.14615062, 0.378821...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 

@@ -1,7 +1,6 @@
 Some interesting data science projects I have done were listed in this repo for imformation sharing and knowledge transfering purposes.
 
 # Data Science (Machine Learning) Project
-* [Linux for Data Scienctists](./Linux_Data_Science) A jupyter notebook to demo some useful Linux commands to help daily work and project management.
 * [Data Regression Learning - Traditional Approach](./Tradition_Data_Analytics/) A traditional solution with Python libraries, such as pandas, numpy, scikit-learn, etc. to do regression learning.
 * [Data Regression Learning - Spark Implementation](./Tradition_Data_Analysis_Spark) A distributed solution with Spark and Pyspark libraries to do regression learning. 
 * [Time Series Analytics - Traditional Approach](./Time_Series_Forecasting) A traditional solution with Python and Facebook Prophet libraries to do time series forecasting.

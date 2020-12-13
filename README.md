@@ -1,18 +1,16 @@
-Some interesting data science projects I have done were listed in this repo for imformation sharing and knowledge transfering purposes.
+Some interesting data projects I have done were listed in this repo for imformation sharing purposes.
 
-# Data Science (Machine Learning) Project
-* [Data Regression Learning - Traditional Approach](./Tradition_Data_Analytics/) A traditional solution with Python libraries, such as pandas, numpy, scikit-learn, etc. to do regression learning.
-* [Data Regression Learning - Spark Implementation](./Tradition_Data_Analysis_Spark) A distributed solution with Spark and Pyspark libraries to do regression learning. 
-* [Time Series Analytics - Traditional Approach](./Time_Series_Forecasting) A traditional solution with Python and Facebook Prophet libraries to do time series forecasting.
-* [Natural Language Processing (NLP) Comparison - Spark Implementaion](./NLP_Analysis_Spark/) A comparison study on NLP solutions with Spark implementation.
-* [Natural Language Processing (NLP) - Neural Network Approach with Sciki-learn & Gensim](./NLP_Analysis_NNC) A solution to do NLP classification with Pandas, Sciki-learn and Gensim. 
-* [Natural Lanauage Processing (NLP) - Neural Network Approach with Tensflow](./NLP_Analysis_Tensorflow/Level_NoSpark.ipynb) A solution to do NLP classification with Tensorflow and Kares. 
+# Data Projects
 
-# Recommended Environmental Setup
-In order to implement and test the solutions, the [Environmental Setup](./Environment_Setup.md) includes:
-* Prerequisite Installation & Configuration On Linux, Python, Spark and so on.
-* Installation & Configuration of Jupyter Notebook
+## Data Science Projects
 
-The step-by-step instructions can be found at this [link](./Environment_Setup.md) After the environment setup is finished, the validation jupyter notebook should look like as the following screen shot:<a><img src="./Capture.PNG" alt="Jupyter Notebook"></a>
+* [Machine Learning - Regressions](./Data_Science_Projects/Tradition_Data_Analytics/) A project to simply compare Linear Regression, ElasticNet Regression, Random Forest, Extra Trees, SVM, Gradient Boosted algorithms by using open source libraries, including pandas, numpy, scikit-learn, etc.
+* [Time Series Analytics](./Data_Science_Projects/Time_Series_Forecasting) A project to compare time series algorithms, including Seasonal AutoRegression Integrated Moving Average (SARIMA), AutoRegression Integrated Moving Average (ARIMA), Exponential Smoothing and Facebook Prophet by using open source pandas, numpy, fbprophet, statsmodel and scikit-learn libraries.
+* [Natural Language Processing (NLP)](./Data_Science_Projects/NLP_Analysis_Spark/) A comparison project on NLP solutions including feature engineering with TFIDF, Hash TF, word2vec and classification with naive bayes, random forest, dense neural network by using open source pyspark and gensim libraries.
+* [Natural Language Processing (NLP)](./Data_Science_Projects/NLP_Analysis_NNC) A NLP classification project by using word2vec and dense neural network technologies with pandas, sciki-learn and gensim open source libraries.
+* [Natural Lanauage Processing (NLP) - Tensflow](./Data_Science_Projects/NLP_Analysis_Tensorflow/) A project to do NLP classification with convolutional neural network (CNN) by using open source tensorflow and kares libraries.
 
-A screen shot for the jupyter notebook should looks like as following: <a><img src="./Capture1.PNG" alt="Project Notebook"></a>
+## Data Engineering Projects
+
+* [AWS Glue Jobs](./Data_Engineering_Projects/gluejobs) A project to create ETL processes by using AWS Glue jobs python scripts, including data schema validations, delta lake generation, glue shell job with pandas & numpy libraries.
+* [AWS Kinesis Stream](./Data_Engineering_Projects/kinesis/) A project to create AWS Kinesis Stream processes to pull json data from randomuser.me with kinesis data streams, query data with kinesis analytics, save data into s3 with kinesis data firehose, and finally process data with a lambda function.

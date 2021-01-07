@@ -1,0 +1,7 @@
+spacy
+requests==2.22.0
+numpy
+jupyter
+tqdm
+regex
+presidio_analyzer

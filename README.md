@@ -9,6 +9,7 @@ Some interesting data projects I have done were listed in this repo for imformat
 * [Natural Language Processing (NLP)](./Data_Science_Projects/NLP_Analysis_Spark/) A comparison project on NLP solutions including feature engineering with TFIDF, Hash TF, word2vec and classification with naive bayes, random forest, dense neural network by using open source pyspark and gensim libraries.
 * [Natural Language Processing (NLP)](./Data_Science_Projects/NLP_Analysis_NNC) A NLP classification project by using word2vec and dense neural network technologies with pandas, sciki-learn and gensim open source libraries.
 * [Natural Lanauage Processing (NLP) - Tensflow](./Data_Science_Projects/NLP_Analysis_Tensorflow/) A project to do NLP classification with convolutional neural network (CNN) by using open source tensorflow and kares libraries.
+* [Personal Identifiable Information (PII) Detection](.Data_Science_Projects/PII_Detection/) A project to demonstrate how to use NLP pre-trained models (spaCy & presidio Python libraries) and AWS comprehend service to detect PII information.
 
 ## Data Engineering Projects
 

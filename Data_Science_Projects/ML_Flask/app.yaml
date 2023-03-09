@@ -1,0 +1,36 @@
+service: occlevel-classifier-v3
+runtime: python
+env: flex
+# entrypoint: gunicorn -b :$PORT main:app
+# increase thread number to handle more requests
+entrypoint: gunicorn --bind :$PORT --workers 1 --threads 8 main:app
+
+runtime_config:
+  python_version: 3
+
+env_variables:
+    SF_USERNAME: ychen
+    SF_PASSWORD: 
+    SF_ACCOUNT: allegisgroup_dev.east-us-2.azure
+    SF_WAREHOUSE: DS1_X_SMALL
+    SF_DATABASE: DATA_SCIENCE
+    SF_SCHEMA: PUBLIC
+    SF_ROLE: DS_ANALYST
+
+# This sample incurs costs to run on the App Engine flexible environment. 
+# The settings below are to reduce costs during testing and are not appropriate
+# for production use. For more information, see:
+# https://cloud.google.com/appengine/docs/flexible/python/configuring-your-app-with-app-yaml
+# manual_scaling:
+#   instances: 2
+# automatic_scaling as default for flex App Engine
+automatic_scaling:
+  max_num_instances: 4
+  min_num_instances: 1
+  cpu_utilization:
+    target_utilization: 0.7
+
+resources:
+  cpu: 1
+  memory_gb: 3
+  disk_size_gb: 10

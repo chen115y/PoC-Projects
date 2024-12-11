@@ -24,6 +24,9 @@ assistant = sync_openai_client.beta.assistants.retrieve(
 config.ui.name = assistant.name
 
 class EventHandler(AsyncAssistantEventHandler):
+    """
+    Handles events from the OpenAI Assistant API and manages message display in the Chainlit interface.
+    """
 
     def __init__(self, assistant_name: str) -> None:
         super().__init__()
@@ -43,6 +46,20 @@ class EventHandler(AsyncAssistantEventHandler):
             await self.current_message.stream_token(delta.value)
 
     async def on_text_done(self, text):
+        """
+        Handles when text generation is complete, processes any file annotations, and updates the message.
+        
+        This method:
+        - Updates the current message
+        - For each file annotation:
+            - Retrieves the file content
+            - If the file is a Plotly figure, displays it as an interactive plot
+            - Otherwise displays it as a downloadable file
+            - Updates any file path references in the message with proper Chainlit links
+        
+        Args:
+            text: The completed text object containing content and annotations
+        """
         await self.current_message.update()
         if text.annotations:
             print(text.annotations)
@@ -67,6 +84,19 @@ class EventHandler(AsyncAssistantEventHandler):
                         await self.current_message.update()
 
     async def on_tool_call_created(self, tool_call):
+        """
+        Handles the creation of a tool call by initializing and sending a new step in the Chainlit interface.
+
+        Args:
+            tool_call: The tool call object from the OpenAI Assistant API containing information about the tool being called.
+
+        This method:
+        - Sets the current tool call ID
+        - Creates a new Chainlit Step with the tool type
+        - Configures the step to show Python input
+        - Sets the start time
+        - Sends the step to the interface
+        """
         self.current_tool_call = tool_call.id
         self.current_step = cl.Step(name=tool_call.type, type="tool", parent_id=cl.context.session.id)
         self.current_step.show_input = "python"
@@ -74,6 +104,26 @@ class EventHandler(AsyncAssistantEventHandler):
         await self.current_step.send()
 
     async def on_tool_call_delta(self, delta, snapshot): 
+        """
+        Handles streaming updates from tool calls in the OpenAI Assistant API.
+
+        This method processes incremental updates (deltas) from tool calls and manages the display
+        of code execution steps in the Chainlit interface.
+
+        Args:
+            delta: The incremental update containing changes in the tool call
+            snapshot: The current state of the tool call after applying the delta
+
+        The method handles:
+        - Creating new steps for tool calls (code interpreter or function calls)
+        - Streaming code input
+        - Processing code interpreter outputs including:
+            - Log messages
+            - Generated images
+            - Code execution results
+
+        The step display is updated in real-time as new information arrives from the tool call.
+        """
         if snapshot.id != self.current_tool_call:
             self.current_tool_call = snapshot.id
             self.current_step = cl.Step(name=delta.type, type="tool",  parent_id=cl.context.session.id)
@@ -115,6 +165,18 @@ class EventHandler(AsyncAssistantEventHandler):
         await self.current_step.update()
 
     async def on_image_file_done(self, image_file):
+        """
+        Handles the completion of image file processing by retrieving and displaying the image in the chat interface.
+
+        Args:
+            image_file: The image file object containing the file_id from the OpenAI API
+
+        This method:
+            - Retrieves the image content using the file_id
+            - Creates a Chainlit Image element with the content
+            - Adds the image to the current message's elements
+            - Updates the message to display the image inline
+        """
         image_id = image_file.file_id
         response = await async_openai_client.files.with_raw_response.content(image_id)
         image_element = cl.Image(
@@ -139,6 +201,18 @@ async def speech_to_text(audio_file):
 
 
 async def upload_files(files: List[Element]):
+    """
+    Uploads files to OpenAI's API for use with assistants.
+
+    Args:
+        files (List[Element]): List of file elements to upload, each containing a file path
+
+    Returns:
+        list: A list of file IDs returned by the OpenAI API after successful upload
+
+    The function iterates through the provided files, uploads each one to OpenAI's API
+    with the purpose set to "assistants", and collects the returned file IDs.
+    """
     file_ids = []
     for file in files:
         uploaded_file = await async_openai_client.files.create(
@@ -149,6 +223,23 @@ async def upload_files(files: List[Element]):
 
 
 async def process_files(files: List[Element]):
+    """
+    Process uploaded files and prepare them for use with OpenAI Assistant API.
+    
+    Args:
+        files (List[Element]): List of file elements to be processed
+        
+    Returns:
+        list: A list of dictionaries containing file_id and allowed tools for each file.
+              For text-based files (docx, markdown, pdf, txt), both code_interpreter and file_search 
+              tools are enabled. For other file types, only code_interpreter is enabled.
+              
+    Each dictionary in the returned list has the format:
+    {
+        "file_id": str,  # The ID of the uploaded file
+        "tools": list    # List of allowed tools for this file
+    }
+    """
     # Upload files if any and get file_ids
     file_ids = []
     if len(files) > 0:
@@ -190,6 +281,23 @@ async def stop_chat():
 
 @cl.on_message
 async def main(message: cl.Message):
+    """
+    Handles incoming chat messages by processing them through the OpenAI Assistant API.
+
+    This function:
+    1. Retrieves the current thread ID from the user session
+    2. Processes any file attachments in the message
+    3. Creates a new message in the OpenAI thread with the user's content and attachments
+    4. Streams the assistant's response using the EventHandler
+
+    Args:
+        message (cl.Message): The incoming message object from Chainlit containing:
+            - content: The text content of the message
+            - elements: Any file attachments or elements included in the message
+
+    The function integrates with OpenAI's Assistant API to maintain conversation context
+    and handle file processing while streaming responses back to the user interface.
+    """
     thread_id = cl.user_session.get("thread_id")
 
     attachments = await process_files(message.elements)

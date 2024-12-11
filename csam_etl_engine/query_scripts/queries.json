@@ -1,0 +1,41 @@
+{
+    "prequisites": [
+        {
+            "query": "/opt/qetl/csam_automation/query_scripts/prequisites.sql"
+        }
+    ],
+    "extract_loads": [
+        {
+            "query": "/opt/qetl/csam_automation/query_scripts/query_hardware.sql",
+            "table": "eol_eos_hardware"
+    
+        },
+        {
+            "query": "/opt/qetl/csam_automation/query_scripts/query_operative_system.sql",
+            "table": "eol_eos_operative_system"
+        },
+        {
+            "query": "/opt/qetl/csam_automation/query_scripts/q_asset_inventory.sql",
+            "table": "Q_Asset_Inventory"
+    
+        },
+        {
+            "query": "/opt/qetl/csam_automation/query_scripts/q_asset_software.sql",
+            "table": "Q_Asset_Inventory_Software_AssetId"
+    
+        },
+        {
+            "query": "/opt/qetl/csam_automation/query_scripts/q_software_os.sql",
+            "table": "Q_Asset_Inventory_Software_OS_Unique"
+    
+        }
+    ],
+    "transformations": [
+        {
+            "query": "/opt/qetl/csam_automation/query_scripts/transformations.sql"
+        },
+        {
+            "query": "/opt/qetl/csam_automation/query_scripts/reports_final.sql"
+        }
+    ]
+}

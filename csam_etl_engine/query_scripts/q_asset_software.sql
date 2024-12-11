@@ -1,0 +1,1 @@
+SELECT * FROM Q_Asset_Inventory_Software_AssetId;

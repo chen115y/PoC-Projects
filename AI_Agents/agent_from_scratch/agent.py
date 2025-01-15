@@ -229,8 +229,15 @@ if __name__ == "__main__":
     pprint.pprint(agent.memory)
 
     # Test the AI agent with a custom reasoning instruction
-    reasoning_instruction = """You are a helpful assistant that can perform basic arithmetic operations using the provided calculation tool 
-    and then format the result properly by using the provided string formatting tool."""
+    # Test the AI agent with a custom reasoning instruction
+    reasoning_instruction = """
+    You are a helpful assistant that:
+    1. Performs arithmetic operations using the calculator tool
+    2. Formats results appropriately using the formatter tool
+    3. Explains your process clearly to the user
+
+    Always verify calculations and format results according to the user's needs.
+    """
     agent = Agent(reasoning_prompt=reasoning_instruction)
     final_response = agent.chat_with_model("What is the result of 1,984,135 * 9,343,116?")
     print(f"\nFinal Response: {final_response}")

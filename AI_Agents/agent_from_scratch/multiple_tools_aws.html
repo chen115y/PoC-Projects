@@ -7550,7 +7550,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
@@ -7573,7 +7573,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>True</pre>
 </div>
@@ -7596,7 +7596,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">MODEL_NAME</span> <span class="o">=</span> <span class="s2">"us.anthropic.claude-3-5-haiku-20241022-v1:0"</span>
@@ -7633,7 +7633,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">expression</span><span class="p">):</span>
@@ -7680,7 +7680,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">tools</span> <span class="o">=</span> <span class="p">[</span>
@@ -7738,7 +7738,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Agent</span><span class="p">:</span>
@@ -7807,7 +7807,7 @@ a.anchor-link {
                         <span class="p">}</span>  
                     <span class="p">)</span>
                 <span class="c1"># Invoke the model with the new body</span>
-                <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">invoke_model</span><span class="p">(</span><span class="n">body</span><span class="o">=</span><span class="n">body</span><span class="p">,</span> <span class="n">modelId</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">model_name</span><span class="p">)</span>
+                <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">invoke_model</span><span class="p">(</span><span class="n">body</span><span class="o">=</span><span class="n">body</span><span class="p">,</span> <span class="n">modelId</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">model_name</span><span class="p">)</span>
                 <span class="c1"># Extract the response body and messages</span>
                 <span class="n">response_body</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"body"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
                 <span class="n">response_messages</span> <span class="o">=</span> <span class="n">response_body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'content'</span><span class="p">)</span>
@@ -7862,7 +7862,7 @@ a.anchor-link {
                         <span class="s2">"tools"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">tools</span><span class="p">,</span>
                     <span class="p">}</span>  
                 <span class="p">)</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">invoke_model</span><span class="p">(</span><span class="n">body</span><span class="o">=</span><span class="n">body</span><span class="p">,</span> <span class="n">modelId</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">model_name</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">invoke_model</span><span class="p">(</span><span class="n">body</span><span class="o">=</span><span class="n">body</span><span class="p">,</span> <span class="n">modelId</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">model_name</span><span class="p">)</span>
         <span class="n">response_body</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"body"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
         <span class="n">response_messages</span> <span class="o">=</span> <span class="n">response_body</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'content'</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">response_messages</span><span class="p">:</span>
@@ -8099,12 +8099,18 @@ Final Response: The result of the calculation (12851 - 593) * 301 + 76 is 3,689,
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Test the AI agent with a custom reasoning instruction</span>
-<span class="n">reasoning_instruction</span> <span class="o">=</span> <span class="s2">"""You are a helpful assistant that can perform basic arithmetic operations using the provided calculation tool </span>
-<span class="s2">and then format the result properly by using the provided string formatting tool."""</span>
+<span class="n">reasoning_instruction</span> <span class="o">=</span> <span class="s2">"""</span>
+<span class="s2">You are a helpful assistant that:</span>
+<span class="s2">1. Performs arithmetic operations using the calculator tool</span>
+<span class="s2">2. Formats results appropriately using the formatter tool</span>
+<span class="s2">3. Explains your process clearly to the user</span>
+
+<span class="s2">Always verify calculations and format results according to the user's needs.</span>
+<span class="s2">"""</span>
 <span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">reasoning_prompt</span><span class="o">=</span><span class="n">reasoning_instruction</span><span class="p">)</span>
 <span class="n">final_response</span> <span class="o">=</span> <span class="n">agent</span><span class="o">.</span><span class="n">chat_with_model</span><span class="p">(</span><span class="s2">"What is the result of 1,984,135 * 9,343,116?"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Final Response: </span><span class="si">{</span><span class="n">final_response</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -8125,7 +8131,7 @@ Final Response: The result of the calculation (12851 - 593) * 301 + 76 is 3,689,
 User Message: What is the result of 1,984,135 * 9,343,116?
 ==================================================
 
-Initial Response: I'll help you calculate the multiplication of 1,984,135 and 9,343,116 using the calculator tool.
+Initial Response: I'll help you calculate the multiplication of 1,984,135 and 9,343,116. I'll use the calculator tool to perform this calculation.
 
 Tool Used: calculator
 Tool Input: {'expression': '1984135 * 9343116'}
@@ -8135,9 +8141,13 @@ Tool Used: formatter
 Tool Input: {'input': '18538003464660', 'type': 'decimal'}
 Tool Result: 18538003464660.00
 
-Final Response: The result of 1,984,135 * 9,343,116 is 18,538,003,464,660. 
+Final Response: The result of 1,984,135 * 9,343,116 is 18,538,003,464,660.
 
-I used the calculator tool to perform the multiplication and then used the formatter tool to display the result as a decimal number with two decimal places. The precise result is 18,538,003,464,660.00.
+I broke this down into two steps:
+1. Used the calculator to multiply the two numbers
+2. Used the formatter to display the result as a decimal for clarity
+
+Is there anything else I can help you with?
 </pre>
 </div>
 </div>
@@ -8148,7 +8158,7 @@ I used the calculator tool to perform the multiplication and then used the forma
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">agent</span><span class="o">.</span><span class="n">memory</span><span class="p">)</span>
@@ -8166,31 +8176,33 @@ I used the calculator tool to perform the multiplication and then used the forma
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>[{'content': 'What is the result of 1,984,135 * 9,343,116?', 'role': 'user'},
  {'content': [{'text': "I'll help you calculate the multiplication of "
-                       '1,984,135 and 9,343,116 using the calculator tool.',
+                       "1,984,135 and 9,343,116. I'll use the calculator tool "
+                       'to perform this calculation.',
                'type': 'text'},
-              {'id': 'toolu_bdrk_017nVY3NDdwu6Etwgja9K4da',
+              {'id': 'toolu_bdrk_01UbKb27Xo8FmBAWimaQ9HxM',
                'input': {'expression': '1984135 * 9343116'},
                'name': 'calculator',
                'type': 'tool_use'},
-              {'id': 'toolu_bdrk_01UyCVZcvJkciZF76ge7o7Ja',
+              {'id': 'toolu_bdrk_0113YX4mHcc7wBPYdF1fid3C',
                'input': {'input': '18538003464660', 'type': 'decimal'},
                'name': 'formatter',
                'type': 'tool_use'},
               {'text': 'The result of 1,984,135 * 9,343,116 is '
-                       '18,538,003,464,660. \n'
+                       '18,538,003,464,660.\n'
                        '\n'
-                       'I used the calculator tool to perform the '
-                       'multiplication and then used the formatter tool to '
-                       'display the result as a decimal number with two '
-                       'decimal places. The precise result is '
-                       '18,538,003,464,660.00.',
+                       'I broke this down into two steps:\n'
+                       '1. Used the calculator to multiply the two numbers\n'
+                       '2. Used the formatter to display the result as a '
+                       'decimal for clarity\n'
+                       '\n'
+                       'Is there anything else I can help you with?',
                'type': 'text'}],
   'role': 'assistant'},
  {'content': [{'content': '18538003464660',
-               'tool_use_id': 'toolu_bdrk_017nVY3NDdwu6Etwgja9K4da',
+               'tool_use_id': 'toolu_bdrk_01UbKb27Xo8FmBAWimaQ9HxM',
                'type': 'tool_result'},
               {'content': '18538003464660.00',
-               'tool_use_id': 'toolu_bdrk_01UyCVZcvJkciZF76ge7o7Ja',
+               'tool_use_id': 'toolu_bdrk_0113YX4mHcc7wBPYdF1fid3C',
                'type': 'tool_result'}],
   'role': 'user'}]
 </pre>

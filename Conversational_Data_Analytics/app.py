@@ -258,6 +258,11 @@ async def process_files(files: List[Element]):
 async def set_starters():
     return [
         cl.Starter(
+            label="Run Tesla stock analysis",
+            message="Make a data analysis on the tesla-stock-price.csv file I previously uploaded.",
+            icon="/public/write.svg",
+            ),
+        cl.Starter(
             label="Run a data analysis on my CSV",
             message="Make a data analysis on the next CSV file I will upload.",
             icon="/public/write.svg",

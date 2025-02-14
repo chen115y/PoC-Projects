@@ -1,0 +1,2 @@
+chainlit # ==2.2.0
+openai #==1.62.0

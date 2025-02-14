@@ -1,0 +1,8 @@
+transformers==4.48.3
+torch==2.1.1
+huggingface_hub==0.28.1
+sentence-transformers
+guardrails-ai
+peft==0.14.0
+pandas
+chainlit

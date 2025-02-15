@@ -4,5 +4,6 @@ huggingface_hub==0.28.1
 sentence-transformers
 guardrails-ai
 peft==0.14.0
+tenacity>=8.1.0
 pandas
 chainlit

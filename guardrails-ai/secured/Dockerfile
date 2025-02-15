@@ -1,5 +1,5 @@
 # Use official Python image as base
-# FROM python:3.11-slim-ubuntu
+# FROM python:3.11-slim-ubuntu (it works as well)
 FROM ubuntu:20.04
 
 # Set environment variables
@@ -48,7 +48,6 @@ RUN guardrails configure --enable-metrics --enable-remote-inferencing --token "e
 RUN guardrails hub install hub://guardrails/detect_pii || exit 1
 RUN guardrails hub install hub://guardrails/secrets_present || exit 1
 RUN guardrails hub install hub://guardrails/similar_to_document || exit 1
-RUN guardrails hub install hub://groundedai/grounded_ai_hallucination || exit 1
 RUN guardrails hub install hub://guardrails/web_sanitization || exit 1
 
 # Copy application code

@@ -16,8 +16,8 @@ client = AsyncOpenAI(api_key=api_key)
 MAX_ITER = 5
 
 
-def get_company_name(location, businessType):
-    company_info = {"status": "success", "message": "Cox Communications Inc. 20% market share."}
+def get_company_name(location):
+    company_info = {"status": "success", "message": "Cox Communications Inc. 70% market share."}
     return json.dumps(company_info)
 
 def generate_html_code(input):
@@ -32,20 +32,16 @@ tools = [
         "type": "function",
         "function": {
             "name": "get_company_name",
-            "description": "Search the top 1 company information based on the input location and business type",
+            "description": "Search the top communication company information based on the input location and business type",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "location": {
                         "type": "string",
                         "description": "the market location, e.g. the US, China, etc.",
-                    },
-                    "businessType": {
-                        "type": "string", 
-                        "description": "the business type, e.g. communication, finance, etc."
                     }
                 },
-                "required": ["location", "businessType"]
+                "required": ["location"]
             }
         }
     },
@@ -105,8 +101,7 @@ async def call_tool(tool_call_id, name, arguments, message_history):
 
     if name == "get_company_name":
         function_response = get_company_name(
-            location=arguments.get("location"),
-            businessType=arguments.get("businessType"),
+            location=arguments.get("location")
         )
     elif name == "generate_html_code":
         function_response = generate_html_code(
@@ -173,7 +168,7 @@ async def call_gpt4(message_history):
         if gd.is_hallucination(content=final_answer.content, query=message_history[1]["content"]):
             await cl.Message(content="Sorry, the response is hallucinated. Please contact the administrator for more information.").send()
         elif gd.is_web_sanitization(final_answer.content):
-            await cl.Message(content="Sorry, the response is not safe for the web. Please contact the administrator for more information.").send()
+            await cl.Message(content="Sorry, the response is NOT safe for the web. Please contact the administrator for more information.").send()
         else:
             await final_answer.update()
 
@@ -186,7 +181,7 @@ async def on_message(message: cl.Message):
         await cl.Message(content="Sorry, it seems you are NOT connected to a VPN. Please connect for better experience and security.").send()
 
     message_history = cl.user_session.get("message_history")
-    validated_message, flag = gd.is_valid_content(message.content)
+    validated_message, flag = await gd.is_valid_content(message.content)
     if not flag:
             await cl.Message(content=f"I am sorry but cannot assist with that request: {validated_message}").send()
     else:
@@ -198,6 +193,7 @@ async def on_message(message: cl.Message):
             tool_call_id = await call_gpt4(message_history)
             if not tool_call_id:
                 break
+
             if cur_iter == MAX_ITER - 1:
                 await cl.Message(
                     content="Maximum number of function calls reached. Stopping execution."

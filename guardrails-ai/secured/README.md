@@ -52,19 +52,18 @@ az extension add --name containerapp --upgrade
 az acr login --name analytixaicontainerregistry
 # Create container app environment
 az containerapp env create \
-  --name managedEnvironment-Container-Analytix-AI \
+  --name managedEnvironment-AI \
   --resource-group ContainerRegistry \
   --location eastus
 # Add/Create a workload profile to increase number of CPU cores and memory for the application
 az containerapp env workload-profile add \
-    --name managedEnvironment-Container-Analytix-AI \
+    --name managedEnvironment-AI \
     --resource-group ContainerRegistry \
-    --workload-profile-name analytix-ai \
-    --workload-profile-type D4 \
+    --workload-profile-name ai-agents \
+    --workload-profile-type D8 \
     --max-nodes 4 \
     --min-nodes 2
 ```
-
 ```bash
 # Create container app
 az containerapp create \
@@ -72,10 +71,10 @@ az containerapp create \
   --resource-group ContainerRegistry \
   --registry-server analytixaicontainerregistry.azurecr.io \
   --image analytixaicontainerregistry.azurecr.io/ai-agent-2:v1 \
-  --environment managedEnvironment-Container-Analytix-AI \
-  --workload-profile-name analytix-ai\
-  --cpu 4 \
-  --memory 16Gi \
+  --environment managedEnvironment-AI \
+  --workload-profile-name ai-agents\
+  --cpu 8 \
+  --memory 32Gi \
   --target-port 8088 \
   --ingress external \
   --query properties.configuration.ingress.fqdn

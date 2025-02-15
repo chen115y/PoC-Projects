@@ -14,8 +14,8 @@ client = AsyncOpenAI(api_key=api_key)
 MAX_ITER = 5
 settings = None
 
-def get_company_name(location, businessType):
-    company_info = {"status": "success", "message": "Cox Communications Inc. 20% market share."}
+def get_company_name(location):
+    company_info = {"status": "success", "message": "Cox Communications Inc. 70% market share."}
     return json.dumps(company_info)
 
 def generate_html_code(input):
@@ -30,20 +30,16 @@ tools = [
         "type": "function",
         "function": {
             "name": "get_company_name",
-            "description": "Search the top 1 company information based on the input location and business type",
+            "description": "Search the top communication company information based on the input location and business type",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "location": {
                         "type": "string",
                         "description": "the market location, e.g. the US, China, etc.",
-                    },
-                    "businessType": {
-                        "type": "string", 
-                        "description": "the business type, e.g. communication, finance, etc."
                     }
                 },
-                "required": ["location", "businessType"]
+                "required": ["location"]
             }
         }
     },
@@ -103,8 +99,7 @@ async def call_tool(tool_call_id, name, arguments, message_history):
 
     if name == "get_company_name":
         function_response = get_company_name(
-            location=arguments.get("location"),
-            businessType=arguments.get("businessType"),
+            location=arguments.get("location")
         )
     elif name == "generate_html_code":
         function_response = generate_html_code(

@@ -1,0 +1,11 @@
+Employee_ID,First_Name,Last_Name,Job_Title,Department,Hire_Date,Salary,Email,Phone,Employee_Status
+1001,John,Doe,Software Engineer,Engineering,2015-06-01,95000,john.doe@example.com,555-1234,Full-Time
+1002,Jane,Smith,HR Manager,Human Resources,2017-03-15,75000,jane.smith@example.com,555-5678,Part-Time
+1003,Michael,Brown,Sales Executive,Sales,2018-09-10,60000,michael.brown@example.com,555-8765,Full-Time
+1004,Emily,Clark,Marketing Specialist,Marketing,2019-02-20,67000,emily.clark@example.com,555-4321,Full-Time
+1005,Chris,Wilson,Data Analyst,Data,2020-11-05,78000,christopher.wilson@example.com,555-6543,Full-Time
+1006,Susan,Lee,Product Manager,Product,2016-07-30,85000,susan.lee@example.com,555-7890,Full-Time
+1007,David,Martinez,UX Designer,Design,2021-01-10,72000,david.martinez@example.com,555-2468,Full-Time
+1008,Amy,Taylor,Customer Support Rep,Customer Service,2018-04-12,50000,amy.taylor@example.com,555-1357,Part-Time
+1009,Robert,Anderson,Financial Analyst,Finance,2014-08-01,95000,robert.anderson@example.com,555-8642,Full-Time
+1010,Linda,Thomas,Operations Manager,Operations,2017-06-21,80000,linda.thomas@example.com,555-3579,Full-Time
